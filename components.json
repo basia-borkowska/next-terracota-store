@@ -1,17 +1,20 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
-  "style": "default",
+  "style": "new-york",
   "rsc": true,
   "tsx": true,
   "tailwind": {
     "config": "tailwind.config.ts",
     "css": "src/app/globals.css",
-    "baseColor": "slate",
-    "cssVariables": true
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
   },
+  "iconLibrary": "lucide",
   "aliases": {
-    "components": "@shared/ui/atoms",
-    "utils": "@shared/lib/cn"
+    "components": "@shared/ui",
+    "ui": "@shared/ui/atoms",
+    "utils": "@shared/lib"
   },
-  "componentDir": "src/shared/ui/atoms"
+  "registries": {}
 }
