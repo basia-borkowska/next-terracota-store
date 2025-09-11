@@ -7,7 +7,7 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// --- Domain enums ---
+/** Use lowercase to match your frontend & query params */
 enum Category {
   table
   chair
@@ -17,54 +17,61 @@ enum Category {
   lamp
 }
 
-// --- Core models ---
 model Product {
   id              String   @id
-
+  // Localized fields
   title_en        String
   title_pl        String
   description_en  String
   description_pl  String
 
-  images          String[] // store public paths or URLs
+  images          String[]            // TEXT[] in Postgres
   category        Category
-  price           Decimal  @db.Decimal(10,2)
-  discountedPrice Decimal? @db.Decimal(10,2)
-  currency        String   @default("PLN")
-  isNew           Boolean  @default(false)
 
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  // Money as Decimal; we’ll convert to number/string in mappers
+  price           Decimal             @db.Decimal(12,2)
+  discountedPrice Decimal?            @db.Decimal(12,2)
+  currency        String              @default("PLN") @db.VarChar(8)
+
+  isNew           Boolean             @default(false)
+
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
 
   campaignItems   CampaignProduct[]
+
+  @@index([category])
+  @@index([isNew])
+  @@index([discountedPrice])
+  @@index([createdAt])
 }
 
 model Campaign {
-  id              String  @id
+  id             String  @id
 
-  title_en        String
-  title_pl        String
-  description_en  String
-  description_pl  String
-  story_en         String
-  story_pl         String
-  images          String[] // hero + gallery images
+  // Localized
+  title_en       String
+  title_pl       String
+  description_en String
+  description_pl String
+  story_en       String
+  story_pl       String
 
-  // if you care about product order per campaign, use the join model below
-  products        CampaignProduct[]
+  images         String[]            // TEXT[]
 
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  products       CampaignProduct[]
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 }
 
-// Join model to keep product order within a campaign
 model CampaignProduct {
   campaignId String
   productId  String
-  position   Int     @default(0)
+  position   Int      @default(0)
 
   campaign   Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
-  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  product    Product  @relation(fields: [productId],  references: [id], onDelete: Cascade)
 
   @@id([campaignId, productId])
   @@index([campaignId, position])
