@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "p001",
+    "title": "Stół jadalny #1",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p002",
+    "title": "Krzesło #2",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p003",
+    "title": "Łóżko #3",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p004",
+    "title": "Sofa #4",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p005",
+    "title": "Dywan #5",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p006",
+    "title": "Lampa #6",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p007",
+    "title": "Stół jadalny #7",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p008",
+    "title": "Krzesło #8",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p009",
+    "title": "Łóżko #9",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p010",
+    "title": "Sofa #10",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p011",
+    "title": "Dywan #11",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p012",
+    "title": "Lampa #12",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p013",
+    "title": "Stół jadalny #13",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p014",
+    "title": "Krzesło #14",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p015",
+    "title": "Łóżko #15",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p016",
+    "title": "Sofa #16",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p017",
+    "title": "Dywan #17",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p018",
+    "title": "Lampa #18",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p019",
+    "title": "Stół jadalny #19",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p020",
+    "title": "Krzesło #20",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p021",
+    "title": "Łóżko #21",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p022",
+    "title": "Sofa #22",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p023",
+    "title": "Dywan #23",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p024",
+    "title": "Lampa #24",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p025",
+    "title": "Stół jadalny #25",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p026",
+    "title": "Krzesło #26",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p027",
+    "title": "Łóżko #27",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p028",
+    "title": "Sofa #28",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p029",
+    "title": "Dywan #29",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p030",
+    "title": "Lampa #30",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p031",
+    "title": "Stół jadalny #31",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p032",
+    "title": "Krzesło #32",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p033",
+    "title": "Łóżko #33",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p034",
+    "title": "Sofa #34",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p035",
+    "title": "Dywan #35",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p036",
+    "title": "Lampa #36",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p037",
+    "title": "Stół jadalny #37",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p038",
+    "title": "Krzesło #38",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p039",
+    "title": "Łóżko #39",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p040",
+    "title": "Sofa #40",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p041",
+    "title": "Dywan #41",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p042",
+    "title": "Lampa #42",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p043",
+    "title": "Stół jadalny #43",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p044",
+    "title": "Krzesło #44",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p045",
+    "title": "Łóżko #45",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p046",
+    "title": "Sofa #46",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p047",
+    "title": "Dywan #47",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p048",
+    "title": "Lampa #48",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p049",
+    "title": "Stół jadalny #49",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p050",
+    "title": "Krzesło #50",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p051",
+    "title": "Łóżko #51",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p052",
+    "title": "Sofa #52",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p053",
+    "title": "Dywan #53",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p054",
+    "title": "Lampa #54",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p055",
+    "title": "Stół jadalny #55",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p056",
+    "title": "Krzesło #56",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p057",
+    "title": "Łóżko #57",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p058",
+    "title": "Sofa #58",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p059",
+    "title": "Dywan #59",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p060",
+    "title": "Lampa #60",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p061",
+    "title": "Stół jadalny #61",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p062",
+    "title": "Krzesło #62",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p063",
+    "title": "Łóżko #63",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p064",
+    "title": "Sofa #64",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p065",
+    "title": "Dywan #65",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p066",
+    "title": "Lampa #66",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p067",
+    "title": "Stół jadalny #67",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p068",
+    "title": "Krzesło #68",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p069",
+    "title": "Łóżko #69",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p070",
+    "title": "Sofa #70",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p071",
+    "title": "Dywan #71",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p072",
+    "title": "Lampa #72",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p073",
+    "title": "Stół jadalny #73",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p074",
+    "title": "Krzesło #74",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p075",
+    "title": "Łóżko #75",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p076",
+    "title": "Sofa #76",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p077",
+    "title": "Dywan #77",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p078",
+    "title": "Lampa #78",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p079",
+    "title": "Stół jadalny #79",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p080",
+    "title": "Krzesło #80",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p081",
+    "title": "Łóżko #81",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p082",
+    "title": "Sofa #82",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p083",
+    "title": "Dywan #83",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p084",
+    "title": "Lampa #84",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p085",
+    "title": "Stół jadalny #85",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p086",
+    "title": "Krzesło #86",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p087",
+    "title": "Łóżko #87",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p088",
+    "title": "Sofa #88",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p089",
+    "title": "Dywan #89",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p090",
+    "title": "Lampa #90",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p091",
+    "title": "Stół jadalny #91",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p092",
+    "title": "Krzesło #92",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p093",
+    "title": "Łóżko #93",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p094",
+    "title": "Sofa #94",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p095",
+    "title": "Dywan #95",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p096",
+    "title": "Lampa #96",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p097",
+    "title": "Stół jadalny #97",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p098",
+    "title": "Krzesło #98",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p099",
+    "title": "Łóżko #99",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p100",
+    "title": "Sofa #100",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p101",
+    "title": "Dywan #101",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p102",
+    "title": "Lampa #102",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p103",
+    "title": "Stół jadalny #103",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p104",
+    "title": "Krzesło #104",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p105",
+    "title": "Łóżko #105",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p106",
+    "title": "Sofa #106",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p107",
+    "title": "Dywan #107",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p108",
+    "title": "Lampa #108",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p109",
+    "title": "Stół jadalny #109",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p110",
+    "title": "Krzesło #110",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p111",
+    "title": "Łóżko #111",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p112",
+    "title": "Sofa #112",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p113",
+    "title": "Dywan #113",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p114",
+    "title": "Lampa #114",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p115",
+    "title": "Stół jadalny #115",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p116",
+    "title": "Krzesło #116",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p117",
+    "title": "Łóżko #117",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p118",
+    "title": "Sofa #118",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p119",
+    "title": "Dywan #119",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p120",
+    "title": "Lampa #120",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p121",
+    "title": "Stół jadalny #121",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p122",
+    "title": "Krzesło #122",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p123",
+    "title": "Łóżko #123",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p124",
+    "title": "Sofa #124",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p125",
+    "title": "Dywan #125",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p126",
+    "title": "Lampa #126",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p127",
+    "title": "Stół jadalny #127",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p128",
+    "title": "Krzesło #128",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p129",
+    "title": "Łóżko #129",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p130",
+    "title": "Sofa #130",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p131",
+    "title": "Dywan #131",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p132",
+    "title": "Lampa #132",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p133",
+    "title": "Stół jadalny #133",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p134",
+    "title": "Krzesło #134",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p135",
+    "title": "Łóżko #135",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p136",
+    "title": "Sofa #136",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p137",
+    "title": "Dywan #137",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p138",
+    "title": "Lampa #138",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p139",
+    "title": "Stół jadalny #139",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p140",
+    "title": "Krzesło #140",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p141",
+    "title": "Łóżko #141",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p142",
+    "title": "Sofa #142",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p143",
+    "title": "Dywan #143",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p144",
+    "title": "Lampa #144",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p145",
+    "title": "Stół jadalny #145",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p146",
+    "title": "Krzesło #146",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p147",
+    "title": "Łóżko #147",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p148",
+    "title": "Sofa #148",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p149",
+    "title": "Dywan #149",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p150",
+    "title": "Lampa #150",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p151",
+    "title": "Stół jadalny #151",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p152",
+    "title": "Krzesło #152",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p153",
+    "title": "Łóżko #153",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p154",
+    "title": "Sofa #154",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p155",
+    "title": "Dywan #155",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p156",
+    "title": "Lampa #156",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p157",
+    "title": "Stół jadalny #157",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p158",
+    "title": "Krzesło #158",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p159",
+    "title": "Łóżko #159",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p160",
+    "title": "Sofa #160",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p161",
+    "title": "Dywan #161",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p162",
+    "title": "Lampa #162",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p163",
+    "title": "Stół jadalny #163",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p164",
+    "title": "Krzesło #164",
+    "description": "Krzesło o lekkiej formie i solidnej konstrukcji, które łączy komfort z estetyką. Łatwo je dopasować do stołu, a tapicerowane siedzisko podnosi wygodę na co dzień."
+  },
+  {
+    "id": "p165",
+    "title": "Łóżko #165",
+    "description": "Minimalistyczna rama łóżka z mocnymi listwami podtrzymującymi materac. Zapewnia stabilność i komfort snu, a prosta forma łatwo komponuje się z pościelą i dodatkami w różnych kolorach."
+  },
+  {
+    "id": "p166",
+    "title": "Sofa #166",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p167",
+    "title": "Dywan #167",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p168",
+    "title": "Lampa #168",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p169",
+    "title": "Stół jadalny #169",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p170",
+    "title": "Krzesło #170",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  },
+  {
+    "id": "p171",
+    "title": "Łóżko #171",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p172",
+    "title": "Sofa #172",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p173",
+    "title": "Dywan #173",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p174",
+    "title": "Lampa #174",
+    "description": "Regulowana lampa z lnianym abażurem rozprasza światło, tworząc nastrojową atmosferę. Idealna do czytania wieczorem, pracy przy biurku lub doświetlenia kącika wypoczynkowego."
+  },
+  {
+    "id": "p175",
+    "title": "Stół jadalny #175",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p176",
+    "title": "Krzesło #176",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p177",
+    "title": "Łóżko #177",
+    "description": "Łóżko o stonowanej stylistyce, stworzone do relaksu i regeneracji. Solidna konstrukcja nie skrzypi, a uniwersalny wygląd sprawdzi się w sypialni skandynawskiej, klasycznej i nowoczesnej."
+  },
+  {
+    "id": "p178",
+    "title": "Sofa #178",
+    "description": "Trzyosobowa sofa z głębokim siedziskiem, zapraszająca do wypoczynku po długim dniu. Miękkie poduchy i wytrzymała tkanina obiciowa łączą wygodę z praktycznością, a spokojny kolor łatwo zestawić z dodatkami."
+  },
+  {
+    "id": "p179",
+    "title": "Dywan #179",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p180",
+    "title": "Lampa #180",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p181",
+    "title": "Stół jadalny #181",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p182",
+    "title": "Krzesło #182",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p183",
+    "title": "Łóżko #183",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p184",
+    "title": "Sofa #184",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p185",
+    "title": "Dywan #185",
+    "description": "Miękki, tkany dywan o subtelnej fakturze, który dodaje wnętrzu przytulności. Łatwy w utrzymaniu czystości i przyjemny pod stopami, ociepla salon, sypialnię lub pokój dziecka."
+  },
+  {
+    "id": "p186",
+    "title": "Lampa #186",
+    "description": "Funkcjonalna lampa z możliwością regulacji kierunku światła. Sprawdzi się jako oświetlenie zadaniowe i nastrojowe, wprowadzając przyjemny klimat do pomieszczenia."
+  },
+  {
+    "id": "p187",
+    "title": "Stół jadalny #187",
+    "description": "Stół do jadalni o stabilnej konstrukcji i przyjemnej w dotyku powierzchni. Łatwy w pielęgnacji, wygodnie pomieści codzienne posiłki i weekendowe kolacje. Prosty, uniwersalny design wprowadza ład i porządek do przestrzeni."
+  },
+  {
+    "id": "p188",
+    "title": "Krzesło #188",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p189",
+    "title": "Łóżko #189",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p190",
+    "title": "Sofa #190",
+    "description": "Komfortowa sofa o prostej bryle, która odnajdzie się zarówno w mniejszych, jak i większych salonach. Materiał odporny na codzienne użytkowanie, przyjemny w dotyku i łatwy w czyszczeniu."
+  },
+  {
+    "id": "p191",
+    "title": "Dywan #191",
+    "description": "Przyjemny w dotyku dywan, który łączy funkcjonalność z estetyką. Dobrze sprawdzi się w jasnych i ciemnych wnętrzach, podkreślając ich charakter. Prosta forma i neutralna kolorystyka ułatwiają dopasowanie do pozostałych elementów wyposażenia."
+  },
+  {
+    "id": "p192",
+    "title": "Lampa #192",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p193",
+    "title": "Stół jadalny #193",
+    "description": "Praktyczny stół z wytrzymałym blatem, który zniesie codzienne użytkowanie. Subtelne detale i ciepły odcień drewna ocieplają wnętrze, a forma bez zbędnych zdobień pasuje do wielu aranżacji."
+  },
+  {
+    "id": "p194",
+    "title": "Krzesło #194",
+    "description": "Ergonomiczne krzesło z przyjemną w dotyku tkaniną. Proste linie i neutralne kolory czynią je bezpiecznym wyborem do wielu stylów — od nowoczesnego po klasyczny."
+  },
+  {
+    "id": "p195",
+    "title": "Łóżko #195",
+    "description": "Prosta, funkcjonalna rama łóżka, która nie dominuje aranżacji. Naturalne wykończenie ociepla przestrzeń, a przemyślana budowa wspiera odpowiednią wentylację materaca."
+  },
+  {
+    "id": "p196",
+    "title": "Sofa #196",
+    "description": "Uniwersalna sofa z miękkim wypełnieniem i stabilnym oparciem. Dobrze trzyma formę, a jednocześnie pozostaje przytulna. Idealna na wieczorne seanse filmowe i popołudniową drzemkę."
+  },
+  {
+    "id": "p197",
+    "title": "Dywan #197",
+    "description": "Dywan o delikatnym splocie i stonowanej kolorystyce. Doskonały do strefy wypoczynku — tłumi dźwięki i wprowadza miękkość, nie przytłaczając aranżacji."
+  },
+  {
+    "id": "p198",
+    "title": "Lampa #198",
+    "description": "Lampa o prostej formie i ciepłym świetle. Daje komfortową jasność bez olśnienia, a jej neutralny wygląd pasuje do wielu aranżacji – od minimalistycznych po klasyczne."
+  },
+  {
+    "id": "p199",
+    "title": "Stół jadalny #199",
+    "description": "Solidny stół jadalny z trwałego drewna, idealny na rodzinne posiłki i spotkania ze znajomymi. Ponadczasowa forma i neutralne wykończenie sprawiają, że pasuje zarówno do nowoczesnych, jak i klasycznych wnętrz."
+  },
+  {
+    "id": "p200",
+    "title": "Krzesło #200",
+    "description": "Wygodne krzesło z profilowanym oparciem i miękkim siedziskiem. Zapewnia stabilne podparcie podczas dłuższego siedzenia, a uniwersalny wygląd sprawdzi się w jadalni, kuchni lub domowym biurze."
+  }
+]

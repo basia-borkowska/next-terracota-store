@@ -1,0 +1,71 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// --- Domain enums ---
+enum Category {
+  table
+  chair
+  bed
+  sofa
+  carpet
+  lamp
+}
+
+// --- Core models ---
+model Product {
+  id              String   @id
+
+  title_en        String
+  title_pl        String
+  description_en  String
+  description_pl  String
+
+  images          String[] // store public paths or URLs
+  category        Category
+  price           Decimal  @db.Decimal(10,2)
+  discountedPrice Decimal? @db.Decimal(10,2)
+  currency        String   @default("PLN")
+  isNew           Boolean  @default(false)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  campaignItems   CampaignProduct[]
+}
+
+model Campaign {
+  id              String  @id
+
+  title_en        String
+  title_pl        String
+  description_en  String
+  description_pl  String
+  story_en         String
+  story_pl         String
+  images          String[] // hero + gallery images
+
+  // if you care about product order per campaign, use the join model below
+  products        CampaignProduct[]
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+// Join model to keep product order within a campaign
+model CampaignProduct {
+  campaignId String
+  productId  String
+  position   Int     @default(0)
+
+  campaign   Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@id([campaignId, productId])
+  @@index([campaignId, position])
+}

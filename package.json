@@ -8,9 +8,15 @@
     "start": "next start",
     "lint": "eslint",
     "shadcn:add": "npx shadcn@latest add",
-    "postshadcn:add": "node scripts/rename-shadcn.mjs"
+    "postshadcn:add": "node scripts/rename-shadcn.mjs",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
+    "@prisma/client": "^6.16.0",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -32,7 +38,10 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "postcss": "^8.5.6",
+    "prisma": "^6.16.0",
     "tailwindcss": "^4.1.13",
-    "typescript": "^5"
+    "tsx": "^4.20.5",
+    "typescript": "^5",
+    "zod": "^4.1.7"
   }
 }
