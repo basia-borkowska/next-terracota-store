@@ -47,15 +47,14 @@ export default function ProductCard({
         {/* <WishListButton productId={id} /> */}
       </div>
 
+      <ImageWithFallback
+        src={hovered && hoverImage ? hoverImage : mainImage}
+        alt={title}
+        width={286}
+        height={380}
+      />
+      <CardTitle>{title}</CardTitle>
       <CardContent>
-        <ImageWithFallback
-          src={hovered && hoverImage ? hoverImage : mainImage}
-          alt={title}
-          width={286}
-          height={350}
-          className="mb-6"
-        />
-        <CardTitle>{title}</CardTitle>
         <Price
           currency={currency}
           price={price}

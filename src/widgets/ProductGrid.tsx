@@ -1,6 +1,6 @@
 "use client";
 
-import ProductCard from "@widgets/ProductCard/ProductCard";
+import ProductCard from "@/widgets/ProductCard";
 import type { ProductSummaryDTO } from "@shared/lib/api/products";
 import { useTranslations } from "next-intl";
 
