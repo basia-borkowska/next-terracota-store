@@ -1,0 +1,99 @@
+{
+  "common": {
+    "products": "Produkty",
+    "home": "Home"
+  },
+  "error": {
+    "defaultMessage": "Coś poszło nie tak. Spróbuj ponownie później.",
+    "pageNotFound": "Strona, której szukasz, nie istnieje."
+  },
+  "category": {
+    "table_one": "Stół",
+    "table_few": "Stoły",
+    "table_many": "Stołów",
+    "table_other": "Stołu",
+
+    "chair_one": "Krzesło",
+    "chair_few": "Krzesła",
+    "chair_many": "Krzesł",
+    "chair_other": "Krzesła",
+
+    "bed_one": "Łóżko",
+    "bed_few": "Łóżka",
+    "bed_many": "Łóżek",
+    "bed_other": "Łóżka",
+
+    "sofa_one": "Sofa",
+    "sofa_few": "Sofy",
+    "sofa_many": "Sof",
+    "sofa_other": "Sofy",
+
+    "carpet_one": "Dywan",
+    "carpet_few": "Dywany",
+    "carpet_many": "Dywanów",
+    "carpet_other": "Dywanu",
+
+    "lamp_one": "Lampa",
+    "lamp_few": "Lampy",
+    "lamp_many": "Lamp",
+    "lamp_other": "Lampy"
+  },
+  "navbar": {
+    "newIn": "Nowości",
+    "inspirations": "Inspiracje"
+  },
+  "home": {
+    "title": "Na każdą porę roku",
+    "subtitle": "Hołd dla klasyki, która pozostaje na zawsze."
+  },
+  "newProducts": {
+    "header": "New in",
+    "description": "Nowości, które inspirują. Odkryj ponadczasowe projekty stworzone z wysokiej jakości materiałów i dopracowane w każdym detalu. Elementy, które odmienią Twój dom i sprawią, że każda chwila stanie się wyjątkowa."
+  },
+  "inspirations": {
+    "campaignProducts": "Produkty z tej kampanii"
+  },
+  "wishList": {
+    "header": "Lista życzeń",
+    "description": "Twoje ulubione produkty w jednym miejscu. Zapisz je na swojej liście życzeń i wracaj, kiedy tylko zechcesz.",
+    "emptyStateDescription": "Twoje ulubione produkty w jednym miejscu. Zacznij dodawać przedmioty do swojej listy życzeń i wracaj, kiedy tylko zechcesz.",
+    "browseProducts": "Przeglądaj produkty"
+  },
+  "widgets": {
+    "productDetails": {
+      "addToCart": "Dodaj do koszyka"
+    },
+    "carousels": {
+      "discountedProducts": "Skorzystaj z wyprzedaży",
+      "newProducts": "Nowości",
+      "similarProducts": "Może Ci się spodobać"
+    },
+    "footer": {
+      "companyName": "Terracota",
+      "address": "ul. Główna 123",
+      "city": "Łódź, Polska",
+      "vat": "NIP: PL123456789",
+      "email": "Email: kontakt@terracota.com",
+      "pages": {
+        "title": "Strony",
+        "home": "Strona główna",
+        "products": "Produkty",
+        "newProducts": "New In"
+      },
+      "legal": {
+        "title": "Prawne",
+        "privacy": "Polityka prywatności",
+        "terms": "Regulamin"
+      },
+      "copyright": "Wszelkie prawa zastrzeżone."
+    }
+  },
+  "atoms": {
+    "discountBadge": {
+      "title": "Wyprzedaż"
+    },
+    "newInBadge": {
+      "title": "Nowość"
+    }
+  }
+}

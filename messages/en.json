@@ -1,0 +1,82 @@
+{
+  "common": {
+    "products": "Products",
+    "home": "Home"
+  },
+  "error": {
+    "defaultMessage": "Something went wrong. Please try again later.",
+    "pageNotFound": "The page you are looking for does not exist."
+  },
+  "category": {
+    "table_one": "Table",
+    "table_other": "Tables",
+    "chair_one": "Chair",
+    "chair_other": "Chairs",
+    "bed_one": "Bed",
+    "bed_other": "Beds",
+    "sofa_one": "Sofa",
+    "sofa_other": "Sofas",
+    "carpet_one": "Carpet",
+    "carpet_other": "Carpets",
+    "lamp_one": "Lamp",
+    "lamp_other": "Lamps"
+  },
+  "navbar": {
+    "newIn": "New In",
+    "inspirations": "Inspirations"
+  },
+  "home": {
+    "title": "For Every Season",
+    "subtitle": "A tribute to the classics that are here to stay."
+  },
+  "newProducts": {
+    "header": "New in",
+    "description": "Discover timeless designs crafted from high-quality materials and refined in every detail. Pieces that will transform your home and make every moment special."
+  },
+  "inspirations": {
+    "campaignProducts": "Products from this campaign"
+  },
+  "wishList": {
+    "header": "Wish List",
+    "description": "Your favorite products all in one place. Save them to your wish list and come back whenever you want.",
+    "emptyStateDescription": "Your favorite products all in one place. Start adding items to your wish list and come back whenever you want.",
+    "browseProducts": "Browse Products"
+  },
+  "widgets": {
+    "productDetails": {
+      "addToCart": "Add to Cart"
+    },
+    "carousels": {
+      "discountedProducts": "Shop the sales",
+      "newProducts": "New Arrivals",
+      "similarProducts": "You may also like"
+    },
+    "footer": {
+      "companyName": "Terracota",
+      "address": "123 Main Street",
+      "city": "Łódź, Poland",
+      "vat": "VAT: PL123456789",
+      "email": "Email: contact@terracota.com",
+      "pages": {
+        "title": "Pages",
+        "home": "Home",
+        "products": "Products",
+        "newProducts": "New In"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+      },
+      "copyright": "All rights reserved."
+    }
+  },
+  "atoms": {
+    "discountBadge": {
+      "title": "Sale"
+    },
+    "newInBadge": {
+      "title": "New In"
+    }
+  }
+}
