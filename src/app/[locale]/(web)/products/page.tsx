@@ -1,3 +1,4 @@
+import { Container } from "@/shared/ui/layout/Container";
 import { fetchProductsList } from "@shared/lib/api/products";
 import ProductGrid from "@widgets/ProductGrid/ProductGrid";
 
@@ -20,12 +21,9 @@ export default async function ProductsPage({
   );
 
   return (
-    <main className="mx-auto max-w-6xl p-6">
-      <div className="bg-amber-500">test</div>
-      <div className="max-w-[700px]">
-        <ProductGrid items={items} />
-      </div>
+    <Container>
+      <ProductGrid items={items} />
       {/* Later we add a client "Load more" for infinite scroll */}
-    </main>
+    </Container>
   );
 }

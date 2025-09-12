@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
-@plugin "tailwindcss-animate";
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-dark: var(--dark);
+  --color-light: var(--light);
+  --color-brand: var(--brand);
+  --color-interactive: var(--brand);
+  --color-interactive-hover: var(--dark);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -45,6 +49,10 @@
 }
 
 :root {
+  --dark: rgb(37, 24, 20);
+  --light: rgb(239, 246, 255);
+  --brand: rgb(131, 85, 70);
+
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -118,6 +126,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-dark;
   }
 }

@@ -15,7 +15,6 @@
     "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
-    "@next/font": "^14.2.15",
     "@prisma/client": "^6.16.0",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",

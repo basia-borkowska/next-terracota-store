@@ -1,13 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import type { ProductSummaryDTO } from "@shared/lib/api/products";
 import { cn } from "@shared/lib/cn";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardTitle } from "@/shared/ui/atoms/Card";
 import DiscountBadge from "@/shared/ui/atoms/DiscountBadge";
 import NewInBadge from "@/shared/ui/atoms/NewInBadge";
 import Price from "@/shared/ui/molecules/Price";
+import { ImageWithFallback } from "@/shared/ui/molecules/ImageWithFallback";
 
 type Props = {
   product: ProductSummaryDTO;
@@ -30,18 +30,10 @@ export default function ProductCard({
   const mainImage = images[0];
   const hoverImage = images.length > 1 ? images[1] : null;
 
-  //   useEffect(() => {
-  //     if (hoverImage) {
-  //       const img = new Image();
-  //       img.src = hoverImage;
-  //     }
-  //   }, [hoverImage]);
-
   return (
     <Card
       key={id}
       className="relative group/card cursor-pointer"
-      //   onClick={() => navigate(pathnames.product.replace(':id', id))}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -55,13 +47,15 @@ export default function ProductCard({
         {/* <WishListButton productId={id} /> */}
       </div>
 
-      {/* <Image
-        src={hovered && hoverImage ? hoverImage : mainImage}
-        alt={title}
-        className="w-full h-[350px]"
-      /> */}
-      <CardTitle>{title}</CardTitle>
       <CardContent>
+        <ImageWithFallback
+          src={hovered && hoverImage ? hoverImage : mainImage}
+          alt={title}
+          width={286}
+          height={350}
+          className="mb-6"
+        />
+        <CardTitle>{title}</CardTitle>
         <Price
           currency={currency}
           price={price}
