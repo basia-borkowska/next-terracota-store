@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef } from "react";
-import { useProductsInfinite } from "@/shared/lib/queries/products";
+import { useProductsInfinite } from "@/shared/lib/queries/useProductsInfinite";
 import ProductGrid from "@/widgets/ProductGrid";
 
 type Props = {
@@ -12,8 +12,13 @@ type Props = {
   onSale?: boolean;
 };
 
-export default function ProductsInfinite(props: Props) {
-  const { lang, limit = 24, category, isNew, onSale } = props;
+export default function ProductsInfinite({
+  lang,
+  limit = 24,
+  category,
+  isNew,
+  onSale,
+}: Props) {
   const {
     data,
     fetchNextPage,
@@ -23,22 +28,18 @@ export default function ProductsInfinite(props: Props) {
     error,
   } = useProductsInfinite({ lang, limit, category, isNew, onSale });
 
-  // Flatten pages
   const items = useMemo(
     () => data?.pages.flatMap((p) => p.items) ?? [],
     [data]
   );
 
-  // Sentinel for auto-load
   const sentinelRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const el = sentinelRef.current;
     if (!el || !hasNextPage) return;
     const io = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !isFetchingNextPage) {
-          void fetchNextPage();
-        }
+        if (entry.isIntersecting && !isFetchingNextPage) void fetchNextPage();
       },
       { rootMargin: "400px 0px 800px 0px" }
     );
@@ -46,24 +47,16 @@ export default function ProductsInfinite(props: Props) {
     return () => io.disconnect();
   }, [fetchNextPage, hasNextPage, isFetchingNextPage]);
 
-  if (status === "pending") {
+  if (status === "pending")
     return (
       <div className="py-6 text-center text-sm text-gray-500">Loading…</div>
     );
-  }
-  if (status === "error") {
+  if (status === "error")
     return (
       <div className="py-6 text-center text-sm text-red-600">
-        {(error as Error).message}{" "}
-        <button
-          onClick={() => void fetchNextPage()}
-          className="underline underline-offset-2"
-        >
-          Retry
-        </button>
+        {(error as Error).message}
       </div>
     );
-  }
 
   return (
     <>
@@ -71,6 +64,11 @@ export default function ProductsInfinite(props: Props) {
       <div ref={sentinelRef} className="h-10" />
       {isFetchingNextPage && (
         <div className="py-6 text-center text-sm text-gray-500">Loading…</div>
+      )}
+      {!hasNextPage && (
+        <div className="py-8 text-center text-sm text-gray-400">
+          No more products
+        </div>
       )}
     </>
   );

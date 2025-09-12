@@ -1,9 +1,6 @@
-"use client";
-
-import { useInfiniteQuery } from "@tanstack/react-query";
 import type { ProductsListResponse } from "@/shared/lib/api/products";
 
-type BaseParams = {
+export type ProductsQueryParams = {
   lang: "en" | "pl";
   limit?: number;
   category?: string;
@@ -11,7 +8,21 @@ type BaseParams = {
   onSale?: boolean;
 };
 
-async function fetchProductsPage(params: BaseParams & { page: number }) {
+export const productsKey = (p: ProductsQueryParams) =>
+  [
+    "products",
+    p.lang,
+    {
+      limit: p.limit ?? 24,
+      category: p.category,
+      isNew: p.isNew,
+      onSale: p.onSale,
+    },
+  ] as const;
+
+export async function fetchProductsPage(
+  params: ProductsQueryParams & { page: number }
+) {
   const { lang, page, limit = 24, category, isNew, onSale } = params;
   const q = new URLSearchParams();
   q.set("lang", lang);
@@ -28,23 +39,5 @@ async function fetchProductsPage(params: BaseParams & { page: number }) {
   return (await res.json()) as ProductsListResponse;
 }
 
-/** Infinite products with page-based pagination */
-export function useProductsInfinite(params: BaseParams) {
-  const { lang, limit = 24, category, isNew, onSale } = params;
-
-  return useInfiniteQuery({
-    queryKey: ["products", lang, { limit, category, isNew, onSale }],
-    queryFn: ({ pageParam }) =>
-      fetchProductsPage({
-        lang,
-        page: (pageParam as number | undefined) ?? 1,
-        limit,
-        category,
-        isNew,
-        onSale,
-      }),
-    initialPageParam: 1,
-    getNextPageParam: (lastPage) =>
-      lastPage.hasNext ? lastPage.page + 1 : undefined,
-  });
-}
+export const getNextPageParam = (last: ProductsListResponse) =>
+  last.hasNext ? last.page + 1 : undefined;
