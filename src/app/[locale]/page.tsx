@@ -1,15 +1,26 @@
-"use client";
+import Image from "next/image";
 
-import { Button } from "@/shared/ui/atoms/Button";
-import { Sun } from "lucide-react";
-
-export default function Home() {
+const Home = () => {
   return (
-    <main className="min-h-screen grid place-items-center">
-      <Button>
-        <Sun className="mr-2 h-4 w-4 bg-dark" />
-        Hello shadcn
-      </Button>
-    </main>
+    <>
+      <Image
+        className="-mt-navbar-height"
+        src="/images/hero.png"
+        alt="Hero"
+        width={1920}
+        height={600}
+        priority
+      />
+
+      <Image
+        className="w-full"
+        src="/images/home_banner.png"
+        alt="Hero"
+        width={1920}
+        height={400}
+      />
+    </>
   );
-}
+};
+
+export default Home;

@@ -9,6 +9,8 @@
   --color-interactive: var(--brand);
   --color-interactive-hover: var(--dark);
 
+  --spacing-navbar-height: var(--navbar-height);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -52,6 +54,7 @@
   --dark: rgb(37, 24, 20);
   --light: rgb(239, 246, 255);
   --brand: rgb(131, 85, 70);
+  --navbar-height: 56px;
 
   --radius: 0.625rem;
   --card: oklch(1 0 0);
