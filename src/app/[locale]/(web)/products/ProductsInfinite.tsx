@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef } from "react";
 import { useProductsInfinite } from "@/shared/lib/queries/useProductsInfinite";
-import ProductGrid from "@/widgets/ProductGrid";
+import ProductGrid from "@/widgets/ProductGrid/ProductGrid";
 import { Locale } from "@/shared/lib/types";
 
 type Props = {
