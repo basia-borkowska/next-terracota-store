@@ -1,6 +1,6 @@
-export type Lang = "en" | "pl";
+import { Locale } from "./types";
 
-export function getLangFromSearch(searchParams: URLSearchParams): Lang {
+export function getLangFromSearch(searchParams: URLSearchParams): Locale {
   const lang = searchParams.get("lang");
   return lang === "pl" ? "pl" : "en";
 }

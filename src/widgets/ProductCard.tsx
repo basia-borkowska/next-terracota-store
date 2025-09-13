@@ -1,7 +1,6 @@
 "use client";
 
 import type { ProductSummaryDTO } from "@shared/lib/api/products";
-import { cn } from "@shared/lib/cn";
 import { useState } from "react";
 import { Card, CardContent, CardTitle } from "@/shared/ui/atoms/Card";
 import DiscountBadge from "@/shared/ui/atoms/DiscountBadge";
@@ -11,14 +10,12 @@ import { ImageWithFallback } from "@/shared/ui/molecules/ImageWithFallback";
 
 type Props = {
   product: ProductSummaryDTO;
-  className?: string;
   showDiscountBadge?: boolean;
   showNewBadge?: boolean;
 };
 
 export default function ProductCard({
   product,
-  className,
   showNewBadge = true,
   showDiscountBadge = true,
 }: Props) {

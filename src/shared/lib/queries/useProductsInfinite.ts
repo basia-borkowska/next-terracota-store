@@ -2,7 +2,7 @@
 
 import { useInfiniteQuery } from "@tanstack/react-query";
 import {
-  fetchProductsPage,
+  fetchProducts,
   getNextPageParam,
   productsKey,
   type ProductsQueryParams,
@@ -12,7 +12,7 @@ export function useProductsInfinite(params: ProductsQueryParams) {
   return useInfiniteQuery({
     queryKey: productsKey(params),
     queryFn: ({ pageParam }) =>
-      fetchProductsPage({
+      fetchProducts({
         ...params,
         page: (pageParam as number | undefined) ?? 1,
       }),

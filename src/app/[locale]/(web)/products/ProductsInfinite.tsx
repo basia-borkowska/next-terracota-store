@@ -3,9 +3,10 @@
 import { useEffect, useMemo, useRef } from "react";
 import { useProductsInfinite } from "@/shared/lib/queries/useProductsInfinite";
 import ProductGrid from "@/widgets/ProductGrid";
+import { Locale } from "@/shared/lib/types";
 
 type Props = {
-  lang: "en" | "pl";
+  lang: Locale;
   limit?: number;
   category?: string;
   isNew?: boolean;
@@ -60,7 +61,7 @@ export default function ProductsInfinite({
 
   return (
     <>
-      <ProductGrid items={items} />
+      <ProductGrid items={items} showNewBadge={!isNew} />
       <div ref={sentinelRef} className="h-10" />
       {isFetchingNextPage && (
         <div className="py-6 text-center text-sm text-gray-500">Loading…</div>

@@ -1,18 +1,18 @@
 import {
-  QueryClient,
+  fetchProducts,
+  getNextPageParam,
+  productsKey,
+} from "@/shared/lib/queries/products";
+import { LocaleParams } from "@/shared/lib/types";
+import { Container } from "@/shared/ui/layout/Container";
+import {
   dehydrate,
   HydrationBoundary,
+  QueryClient,
 } from "@tanstack/react-query";
-import {
-  fetchProducts,
-  productsKey,
-  getNextPageParam,
-} from "@/shared/lib/queries/products";
-import ProductsInfinite from "./ProductsInfinite";
-import { Container } from "@/shared/ui/layout/Container";
-import { LocaleParams } from "@/shared/lib/types";
+import ProductsInfinite from "../products/ProductsInfinite";
 
-export default async function ProductsPage({
+export default async function NewProductsPage({
   params,
 }: {
   params: LocaleParams;
@@ -26,15 +26,17 @@ export default async function ProductsPage({
     queryFn: ({ pageParam }) =>
       fetchProducts({
         ...baseParams,
+        isNew: true,
         page: (pageParam as number | undefined) ?? 1,
       }),
     initialPageParam: 1,
     getNextPageParam,
   });
+
   return (
     <Container>
       <HydrationBoundary state={dehydrate(queryClient)}>
-        <ProductsInfinite lang={locale} limit={24} />
+        <ProductsInfinite {...baseParams} isNew />
       </HydrationBoundary>
     </Container>
   );

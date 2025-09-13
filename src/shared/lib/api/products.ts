@@ -1,3 +1,5 @@
+import { Locale } from "../types";
+
 export type ProductSummaryDTO = {
   id: string;
   title: string;
@@ -23,7 +25,7 @@ export async function fetchProductsList(
   params: {
     page?: number;
     limit?: number;
-    lang?: "en" | "pl";
+    lang?: Locale;
     category?: string;
     isNew?: boolean;
     onSale?: boolean;

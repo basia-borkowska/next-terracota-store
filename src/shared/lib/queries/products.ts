@@ -1,7 +1,8 @@
 import type { ProductsListResponse } from "@/shared/lib/api/products";
+import { Locale } from "next-intl";
 
 export type ProductsQueryParams = {
-  lang: "en" | "pl";
+  lang: Locale;
   limit?: number;
   category?: string;
   isNew?: boolean;
@@ -20,7 +21,7 @@ export const productsKey = (p: ProductsQueryParams) =>
     },
   ] as const;
 
-export async function fetchProductsPage(
+export async function fetchProducts(
   params: ProductsQueryParams & { page: number }
 ) {
   const { lang, page, limit = 24, category, isNew, onSale } = params;
