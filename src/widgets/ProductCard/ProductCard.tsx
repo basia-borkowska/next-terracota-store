@@ -10,6 +10,7 @@ import { ImageWithFallback } from "@/shared/ui/molecules/ImageWithFallback";
 import Link from "next/link";
 import { pathnames, withLocale } from "@/shared/lib/pathnames";
 import { useLocale } from "next-intl";
+import WishlistButton from "@/features/ui/WishlistButton";
 
 type Props = {
   product: ProductSummaryDTO;
@@ -46,7 +47,7 @@ export default function ProductCard({
           {isNew && showNewBadge && <NewInBadge className="w-fit" />}
         </div>
         <div className="absolute top-1 right-1 z-10">
-          {/* <WishListButton productId={id} /> */}
+          <WishlistButton productId={id} />
         </div>
 
         <ImageWithFallback

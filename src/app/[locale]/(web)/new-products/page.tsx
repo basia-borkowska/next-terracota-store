@@ -11,6 +11,8 @@ import {
   QueryClient,
 } from "@tanstack/react-query";
 import ProductsInfinite from "../products/ProductsInfinite";
+import PageHeader from "@/shared/ui/molecules/PageHeader/PageHeader";
+import { getTranslations } from "next-intl/server";
 
 export default async function NewProductsPage({
   params,
@@ -19,6 +21,8 @@ export default async function NewProductsPage({
 }) {
   const queryClient = new QueryClient();
   const { locale } = await params;
+  const t = await getTranslations({ locale });
+
   const baseParams = { lang: locale, limit: 24 };
 
   await queryClient.prefetchInfiniteQuery({
@@ -35,6 +39,10 @@ export default async function NewProductsPage({
 
   return (
     <Container>
+      <PageHeader
+        title={t("newProducts.header")}
+        description={t("newProducts.description")}
+      />
       <HydrationBoundary state={dehydrate(queryClient)}>
         <ProductsInfinite {...baseParams} isNew />
       </HydrationBoundary>

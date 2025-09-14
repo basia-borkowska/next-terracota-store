@@ -1,8 +1,8 @@
 import { getProductById } from "@/shared/lib/api/products";
 import { Locale } from "@/shared/lib/types";
+import { Container } from "@/shared/ui/layout/Container";
 import { Gallery } from "@/widgets/Gallery/Gallery";
 import ProductDetails from "@/widgets/ProductDetails/ProductDetails";
-import { Container } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -27,10 +27,10 @@ export default async function ProductPage({ params }: { params: Params }) {
         </aside>
       </div>
 
-      <Container className="flex flex-col gap-12">
-        {/* <SimilarProductsCarousel productId={product.id} /> */}
-        {/* <NewProductsCarousel /> */}
-      </Container>
+      {/* <Container className="flex flex-col gap-12"> */}
+      {/* <SimilarProductsCarousel productId={product.id} /> */}
+      {/* <NewProductsCarousel /> */}
+      {/* </Container> */}
     </div>
   );
 }

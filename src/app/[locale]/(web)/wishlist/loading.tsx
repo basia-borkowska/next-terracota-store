@@ -1,9 +1,10 @@
+import { Container } from "@/shared/ui/layout/Container";
 import { ProductGridSkeleton } from "@/widgets/ProductGrid/ProductGrid.skeleton";
 
 export default function Loading() {
   return (
-    <main className="mx-auto max-w-6xl p-6">
+    <Container>
       <ProductGridSkeleton />
-    </main>
+    </Container>
   );
 }

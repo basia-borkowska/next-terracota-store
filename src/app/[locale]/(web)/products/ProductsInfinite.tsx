@@ -66,11 +66,6 @@ export default function ProductsInfinite({
       {isFetchingNextPage && (
         <div className="py-6 text-center text-sm text-gray-500">Loading…</div>
       )}
-      {!hasNextPage && (
-        <div className="py-8 text-center text-sm text-gray-400">
-          No more products
-        </div>
-      )}
     </>
   );
 }

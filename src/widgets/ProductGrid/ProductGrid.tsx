@@ -12,7 +12,7 @@ export default function ProductGrid({ items, showNewBadge }: Props) {
   return (
     <div className="flex flex-col gap-3">
       <span className="text-sm self-end">
-        {items.length} {t("common.products").toLocaleLowerCase()}
+        {t("common.product", { count: items.length }).toLocaleLowerCase()}
       </span>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {items.map((p) => (

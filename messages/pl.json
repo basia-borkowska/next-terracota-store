@@ -1,6 +1,7 @@
 {
   "common": {
     "products": "Produkty",
+    "product": "{count, plural, one {# produkt} few {# produkty} other {# produktów}}",
     "home": "Home"
   },
   "error": {

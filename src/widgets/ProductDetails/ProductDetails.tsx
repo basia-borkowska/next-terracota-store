@@ -6,6 +6,7 @@ import { Button } from "@/shared/ui/atoms/Button";
 import NewInBadge from "@/shared/ui/atoms/NewInBadge";
 import DiscountBadge from "@/shared/ui/atoms/DiscountBadge";
 import { useTranslations } from "next-intl";
+import WishlistButton from "@/features/ui/WishlistButton";
 
 type Props = {
   product: ProductDTO;
@@ -17,7 +18,7 @@ export default function ProductDetails({ product }: Props) {
   const onAddToCart = () =>
     alert(`TODO this action will be moved to addToCard button `);
 
-  const { discountedPrice, isNew, price, currency, description, title } =
+  const { id, discountedPrice, isNew, price, currency, description, title } =
     product;
 
   return (
@@ -41,7 +42,7 @@ export default function ProductDetails({ product }: Props) {
           {t("widgets.productDetails.addToCart")}
         </Button>
 
-        {/* <WishListButton productId={id} variant="secondary" /> */}
+        <WishlistButton productId={id} variant="secondary" />
       </div>
     </div>
   );
