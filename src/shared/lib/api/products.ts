@@ -1,29 +1,6 @@
+import { ProductDTO, ProductSummaryDTO } from "@/entities/product/types";
 import { getBaseUrl } from "../next";
 import { Locale } from "../types";
-
-export type ProductDTO = {
-  id: string;
-  title: string;
-  description: string;
-  images: string[]; // full set for detail endpoint
-  price: number;
-  discountedPrice: number | null;
-  currency: string;
-  isNew: boolean;
-  category: string;
-};
-
-export type ProductSummaryDTO = {
-  id: string;
-  title: string;
-  description: string;
-  category: string;
-  price: number; // already converted in API
-  discountedPrice: number | null;
-  currency: string;
-  isNew: boolean;
-  images: string[]; // first 2 images
-};
 
 export type ProductsListResponse = {
   items: ProductSummaryDTO[];

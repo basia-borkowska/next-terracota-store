@@ -1,7 +1,7 @@
 "use client";
 
 import ProductCard from "@/widgets/ProductCard/ProductCard";
-import type { ProductSummaryDTO } from "@shared/lib/api/products";
+import { ProductSummaryDTO } from "@/entities/product/types";
 import { useTranslations } from "next-intl";
 
 type Props = { items: ProductSummaryDTO[]; showNewBadge?: boolean };

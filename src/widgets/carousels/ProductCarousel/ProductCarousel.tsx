@@ -5,7 +5,7 @@ import { cn } from "@shared/lib/cn";
 import ProductCard from "@/widgets/ProductCard/ProductCard";
 
 import type { EmblaOptionsType } from "embla-carousel";
-import { ProductSummaryDTO } from "@/shared/lib/api/products";
+import { ProductSummaryDTO } from "@/entities/product/types";
 import {
   Carousel,
   CarouselContent,

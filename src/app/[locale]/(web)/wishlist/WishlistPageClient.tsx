@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useWishlist } from "@/features/wishlist/model/useWishlist";
-import type { ProductDTO } from "@/shared/lib/api/products";
+import { ProductDTO } from "@/entities/product/types";
 import ProductGrid from "@/widgets/ProductGrid/ProductGrid";
 import { useTranslations } from "next-intl";
 import Link from "next/link";

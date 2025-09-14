@@ -1,8 +1,25 @@
-import { prisma } from "@shared/lib/db";
-import { getLangFromSearch, num, bool, json } from "@shared/lib/http";
-import { toProductSummary } from "@entities/product/mappers";
+import { prisma } from "@/shared/lib/db";
+import { getLangFromSearch, num, bool, json } from "@/shared/lib/http";
+import { toProductSummary } from "@/entities/product/mappers";
 import type { Product } from ".prisma/client";
 
+/**
+ * GET /api/products
+ *
+ * Supports:
+ *  - ids=a,b,c            (batch by ids; uniform envelope; no pagination)
+ *  - page,limit           (pagination)
+ *  - category,isNew,onSale (filters)
+ *
+ * Always returns a uniform envelope:
+ * {
+ *   items: ProductSummaryDTO[],
+ *   page: number,
+ *   limit: number,
+ *   total: number,
+ *   hasNext: boolean
+ * }
+ */
 export async function GET(req: Request) {
   const url = new URL(req.url);
   const sp = url.searchParams;
@@ -17,28 +34,28 @@ export async function GET(req: Request) {
         .filter(Boolean)
     : null;
 
-  // List filters (used only when ids is not provided)
+  // List filters (used only when ids are not provided)
   const page = num(sp, "page", 1);
   const limit = num(sp, "limit", 30);
   const category = sp.get("category"); // e.g. "sofa"
   const isNew = bool(sp, "isNew");
   const onSale = bool(sp, "onSale");
 
-  // --- Branch A: explicit ids (wishlist) -----------------------------------
+  // --- Branch A: explicit ids (wishlist / batch lookup) ---------------------
   if (ids && ids.length) {
-    // Fetch by ids (order from DB is arbitrary)
     const rows = await prisma.product.findMany({
-      where: { id: { in: ids } }, // if your id is numeric, map to Number(id)
-      // You can include relations here if your mapper needs them
+      where: { id: { in: ids } },
     });
 
-    // Re-map to requested order
+    // preserve requested order
     const index = new Map(ids.map((id, i) => [id, i]));
     rows.sort((a, b) => (index.get(a.id) ?? 0) - (index.get(b.id) ?? 0));
 
-    const items = rows.map((p: Product) => toProductSummary(p, lang));
+    const items = rows.map((p: Product) =>
+      toProductSummary(p as unknown as Product, lang)
+    );
 
-    // For wishlist we typically return all items; no pagination
+    // Return a uniform envelope (no pagination for ids)
     return json({
       items,
       page: 1,
@@ -49,8 +66,8 @@ export async function GET(req: Request) {
   }
 
   // --- Branch B: regular listing (filters + pagination) ---------------------
-  const where: { [key: string]: unknown } = {};
-  if (category) where.category = category; // adjust to your schema
+  const where: Record<string, unknown> = {};
+  if (category) where.category = category; // adjust if enum in your schema
   if (isNew) where.isNew = true;
   if (onSale) where.discountedPrice = { not: null };
 
@@ -62,7 +79,9 @@ export async function GET(req: Request) {
     take: limit,
   });
 
-  const items = rows.map((p: Product) => toProductSummary(p, lang));
+  const items = rows.map((p: Product) =>
+    toProductSummary(p as unknown as Product, lang)
+  );
 
   return json({
     items,

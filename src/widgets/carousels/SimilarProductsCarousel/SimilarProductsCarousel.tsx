@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 import { headers } from "next/headers";
-import type { ProductSummaryDTO } from "@/shared/lib/api/products";
 import { ProductCarouselSkeleton } from "../ProductCarousel/ProductCarousel.skeleton";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { getLocale, getTranslations } from "next-intl/server";
+import { ProductSummaryDTO } from "@/entities/product/types";
 
 type Props = {
   productId: string;

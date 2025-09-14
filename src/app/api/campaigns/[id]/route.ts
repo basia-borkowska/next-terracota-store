@@ -1,32 +1,30 @@
-import { prisma } from "@shared/lib/db";
-import { getLangFromSearch, json } from "@shared/lib/http";
+import { prisma } from "@/shared/lib/db";
+import { getLangFromSearch, json } from "@/shared/lib/http";
+import { toCampaignDetail } from "@/entities/campaign/mappers";
 
 export async function GET(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   const url = new URL(req.url);
   const lang = getLangFromSearch(url.searchParams);
 
   const campaign = await prisma.campaign.findUnique({
-    where: { id: params.id },
-    include: {
-      products: {
-        orderBy: { position: "asc" },
-        select: { productId: true, position: true },
-      },
-    },
+    where: { id },
   });
-
   if (!campaign) return json({ error: "Not found" }, { status: 404 });
 
-  return json({
-    id: campaign.id,
-    title: lang === "pl" ? campaign.title_pl : campaign.title_en,
-    description:
-      lang === "pl" ? campaign.description_pl : campaign.description_en,
-    story: lang === "pl" ? campaign.story_pl : campaign.story_en,
-    images: campaign.images,
-    products: campaign.products,
+  // grab ordered product ids
+  const links = await prisma.campaignProduct.findMany({
+    where: { campaignId: id },
+    orderBy: { position: "asc" },
+    select: { productId: true },
   });
+  const productIds = links.map((l) => l.productId);
+
+  // map localized DTO and inject ordered ids
+  const dto = toCampaignDetail(campaign, productIds, lang);
+
+  return json(dto);
 }

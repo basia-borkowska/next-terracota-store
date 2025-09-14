@@ -1,6 +1,6 @@
 "use client";
 
-import type { ProductSummaryDTO } from "@shared/lib/api/products";
+import { ProductSummaryDTO } from "@/entities/product/types";
 import { useState } from "react";
 import { Card, CardContent, CardTitle } from "@/shared/ui/atoms/Card";
 import DiscountBadge from "@/shared/ui/atoms/DiscountBadge";

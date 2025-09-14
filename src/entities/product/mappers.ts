@@ -1,12 +1,12 @@
 import type { Product, Prisma } from ".prisma/client";
-import type { Lang } from "@shared/lib/http";
+import { Locale } from "@/shared/lib/types";
 
 function decToNumber(d: Prisma.Decimal | null): number | null {
   return d == null ? null : Number(d);
 }
 
 // Summary: only first 2 images
-export function toProductSummary(p: Product, lang: Lang) {
+export function toProductSummary(p: Product, lang: Locale) {
   return {
     id: p.id,
     title: lang === "pl" ? p.title_pl : p.title_en,
@@ -20,7 +20,7 @@ export function toProductSummary(p: Product, lang: Lang) {
   };
 }
 
-export function toProductDetail(p: Product, lang: Lang) {
+export function toProductDetail(p: Product, lang: Locale) {
   return {
     id: p.id,
     title: lang === "pl" ? p.title_pl : p.title_en,
