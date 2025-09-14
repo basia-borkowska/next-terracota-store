@@ -1,3 +1,6 @@
+import { Container } from "@/shared/ui/layout/Container";
+import DiscountedProductsCarousel from "@/widgets/carousels/DiscountedProductsCarousel/DiscountedProductsCarousel";
+import NewProductsCarousel from "@/widgets/carousels/NewProductsCarousel/NewProductsCarousel";
 import Image from "next/image";
 
 const Home = () => {
@@ -12,6 +15,10 @@ const Home = () => {
         priority
       />
 
+      <Container>
+        <NewProductsCarousel />
+      </Container>
+
       <Image
         className="w-full"
         src="/images/home_banner.png"
@@ -19,6 +26,10 @@ const Home = () => {
         width={1920}
         height={400}
       />
+
+      <Container>
+        <DiscountedProductsCarousel />
+      </Container>
     </>
   );
 };
