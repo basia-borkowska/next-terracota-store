@@ -11,7 +11,7 @@ export default function Loading() {
           <GallerySkeleton />
         </div>
 
-        <aside className="md:col-span-1 md:sticky md:top-navbar self-start py-6 md:py-12 md:px-12">
+        <aside className="md:col-span-1 md:sticky md:top-navbar-height self-start py-6 md:py-12 md:px-12">
           <ProductDetailsSkeleton />
         </aside>
       </div>

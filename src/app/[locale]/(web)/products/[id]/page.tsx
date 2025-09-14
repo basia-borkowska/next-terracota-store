@@ -24,7 +24,7 @@ export default async function ProductPage({ params }: { params: Params }) {
           <Gallery images={product.images} />
         </div>
 
-        <aside className="md:col-span-1 md:sticky md:top-navbar self-start py-6 md:py-12 md:px-12">
+        <aside className="md:col-span-1 md:sticky md:top-navbar-height self-start py-6 md:py-12 md:px-12">
           <ProductDetails product={product} />
         </aside>
       </div>
