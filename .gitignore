@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+api/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -13,6 +14,10 @@
 # testing
 /coverage
 
+#builds
+dist
+api/dist
+
 # next.js
 /.next/
 /out/
@@ -23,6 +28,7 @@
 # misc
 .DS_Store
 *.pem
+*.log
 
 # debug
 npm-debug.log*
@@ -30,8 +36,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env
 .env*
+api/.env
 
 # vercel
 .vercel
