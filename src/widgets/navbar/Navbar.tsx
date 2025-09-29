@@ -17,7 +17,7 @@ const Navbar = () => {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
-  const y = useScrollY(); // 👈 your hook
+  const y = useScrollY();
 
   const transparentNavbar = useMemo(
     () => y <= Y_SCROLL_THRESHOLD && pathname === `/${locale}`,

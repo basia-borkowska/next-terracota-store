@@ -10,7 +10,7 @@ const Home = () => {
         className="-mt-navbar-height"
         src="/images/hero.png"
         alt="Hero"
-        width={1920}
+        width={3000}
         height={600}
         priority
       />
