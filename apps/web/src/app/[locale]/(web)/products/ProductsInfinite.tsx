@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef } from "react";
 import { useProductsInfinite } from "@/shared/lib/queries/useProductsInfinite";
 import ProductGrid from "@/widgets/ProductGrid/ProductGrid";
 import { Locale } from "@/shared/lib/types";
+import { ProductGridSkeleton } from "@/widgets/ProductGrid/ProductGrid.skeleton";
 
 type Props = {
   lang: Locale;
@@ -50,7 +51,9 @@ export default function ProductsInfinite({
 
   if (status === "pending")
     return (
-      <div className="py-6 text-center text-sm text-gray-500">Loading…</div>
+      <main className="mx-auto max-w-6xl p-6">
+        <ProductGridSkeleton />
+      </main>
     );
   if (status === "error")
     return (

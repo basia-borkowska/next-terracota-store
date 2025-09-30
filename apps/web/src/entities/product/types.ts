@@ -19,25 +19,18 @@ export type ProductDomain = {
 
 // DTOs (what UI consumes)
 export type ProductSummaryDTO = {
-  id: ProductId;
+  id: string;
   title: string;
-  description: string;
-  category: string;
   price: number;
-  discountedPrice: number | null;
+  discountedPrice?: number | null;
   currency: string;
   isNew: boolean;
-  images: string[]; // first 1–2 for lists
+  onSale: boolean;
+  createdAt: string;
+  category: string;
+  images: string[]; // add images here
 };
 
-export type ProductDTO = {
-  id: ProductId;
-  title: string;
+export type ProductDTO = ProductSummaryDTO & {
   description: string;
-  images: string[]; // full set for details
-  price: number;
-  discountedPrice: number | null;
-  currency: string;
-  isNew: boolean;
-  category: string;
 };

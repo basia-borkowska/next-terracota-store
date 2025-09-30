@@ -1,8 +1,8 @@
 import {
-  fetchProducts,
   getNextPageParam,
   productsKey,
 } from "@/shared/lib/queries/products";
+import { getProducts } from "@/shared/lib/api/products";
 import { LocaleParams } from "@/shared/lib/types";
 import { Container } from "@/shared/ui/layout/Container";
 import {
@@ -28,7 +28,7 @@ export default async function NewProductsPage({
   await queryClient.prefetchInfiniteQuery({
     queryKey: productsKey(baseParams),
     queryFn: ({ pageParam }) =>
-      fetchProducts({
+      getProducts({
         ...baseParams,
         isNew: true,
         page: (pageParam as number | undefined) ?? 1,

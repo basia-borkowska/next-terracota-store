@@ -45,11 +45,7 @@ export default function ProductCarousel({
     <section className={cn("w-full", className)}>
       {(title || seeAllHref) && (
         <div className="mb-3 flex items-center justify-between">
-          {title ? (
-            <h2 className="text-lg font-semibold">{title}</h2>
-          ) : (
-            <span />
-          )}
+          {title && <h2 className="text-lg font-semibold">{title}</h2>}
           {seeAllHref && (
             <Link
               href={seeAllHref}

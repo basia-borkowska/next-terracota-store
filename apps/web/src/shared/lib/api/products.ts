@@ -1,6 +1,6 @@
 import { ProductDTO, ProductSummaryDTO } from "@/entities/product/types";
-import { getBaseUrl } from "../next";
 import { Locale } from "../types";
+import { apiGet } from "../http";
 
 export type ProductsListResponse = {
   items: ProductSummaryDTO[];
@@ -10,42 +10,74 @@ export type ProductsListResponse = {
   hasNext: boolean;
 };
 
-/** Server-safe fetch wrapper (RSC) */
-export async function fetchProductsList(
-  params: {
-    page?: number;
-    limit?: number;
-    lang?: Locale;
-    category?: string;
-    isNew?: boolean;
-    onSale?: boolean;
-  },
-  baseUrl = "" // pass absolute base from the page
-) {
+// Matches Express API shape
+type ExpressProductsResponse<T> = {
+  items: T[];
+  page: number;
+  size: number;
+  total: number;
+};
+
+/** Server-safe fetch wrapper (RSC) now hitting Express */
+export async function getProducts(params: {
+  page?: number;
+  limit?: number; // will map to Express "size"
+  lang?: Locale;
+  category?: string;
+  isNew?: boolean;
+  onSale?: boolean;
+}) {
   const { page = 1, limit = 30, lang = "en", category, isNew, onSale } = params;
+
   const q = new URLSearchParams();
   q.set("page", String(page));
-  q.set("limit", String(limit));
-  q.set("lang", lang);
+  q.set("size", String(limit)); // Express expects "size"
+  q.set("lang", lang); // forwarded (ignored by API until implemented)
   if (category) q.set("category", category);
   if (isNew) q.set("isNew", "true");
   if (onSale) q.set("onSale", "true");
 
-  const url = `${baseUrl}/api/products?${q.toString()}`;
-  const res = await fetch(url, {
-    // cache strategy: revalidate often while developing
-    next: { revalidate: 10 },
-  });
-  if (!res.ok) throw new Error("Failed to load products");
-  return (await res.json()) as ProductsListResponse;
+  const data = await apiGet<ExpressProductsResponse<ProductSummaryDTO>>(
+    `/products?${q.toString()}`
+  );
+
+  // map Express response to your existing shape
+  const mapped: ProductsListResponse = {
+    items: data.items,
+    page: data.page,
+    limit: data.size,
+    total: data.total,
+    hasNext: data.page * data.size < data.total,
+  };
+  return mapped;
 }
 
 export async function getProductById(id: string, lang: "en" | "pl") {
-  const base = await getBaseUrl();
-  const res = await fetch(`${base}/api/products/${id}?lang=${lang}`, {
-    cache: "no-store",
-  });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return (await res.json()) as ProductDTO;
+  try {
+    return await apiGet<ProductDTO>(`/products/${id}?lang=${lang}`);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (error: any) {
+    if (error?.status === 404) return null;
+    throw error;
+  }
+}
+
+export async function getSimilarProducts(
+  id: string,
+  size = 12,
+  lang: "en" | "pl" = "en"
+) {
+  const q = new URLSearchParams({ size: String(size), lang });
+  return apiGet<{ items: ProductSummaryDTO[]; size: number; baseId: string }>(
+    `/products/${id}/similar?${q.toString()}`
+  );
+}
+
+export async function fetchProductsByIds(ids: string[], lang: "en" | "pl") {
+  if (ids.length === 0) return [];
+  const q = new URLSearchParams({ ids: ids.join(","), lang });
+  const res = await apiGet<{ items: ProductSummaryDTO[] }>(
+    `/products?${q.toString()}`
+  );
+  return res.items;
 }

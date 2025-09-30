@@ -3,11 +3,8 @@ import {
   dehydrate,
   HydrationBoundary,
 } from "@tanstack/react-query";
-import {
-  fetchProducts,
-  productsKey,
-  getNextPageParam,
-} from "@/shared/lib/queries/products";
+import { productsKey, getNextPageParam } from "@/shared/lib/queries/products";
+import { getProducts } from "@/shared/lib/api/products";
 import ProductsInfinite from "./ProductsInfinite";
 import { Container } from "@/shared/ui/layout/Container";
 import { LocaleParams } from "@/shared/lib/types";
@@ -24,7 +21,7 @@ export default async function ProductsPage({
   await queryClient.prefetchInfiniteQuery({
     queryKey: productsKey(baseParams),
     queryFn: ({ pageParam }) =>
-      fetchProducts({
+      getProducts({
         ...baseParams,
         page: (pageParam as number | undefined) ?? 1,
       }),

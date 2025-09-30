@@ -1,14 +1,13 @@
 import { Suspense } from "react";
-import { headers } from "next/headers";
 import { getLocale, getTranslations } from "next-intl/server";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { ProductCarouselSkeleton } from "../ProductCarousel/ProductCarousel.skeleton";
+import { getProducts } from "@/shared/lib/api/products";
 
 type Props = {
   title?: string;
   limit?: number;
   className?: string;
-  revalidate?: number; // ISR seconds
 };
 
 export default function NewProductsCarousel(props: Props) {
@@ -19,30 +18,17 @@ export default function NewProductsCarousel(props: Props) {
   );
 }
 
-async function NewProductsInner({
-  title,
-  limit = 12,
-  className,
-  revalidate = 60,
-}: Props) {
+async function NewProductsInner({ title, limit = 12, className }: Props) {
   const locale = await getLocale();
   const t = await getTranslations({ locale });
   const translatedTitle = title ?? t("widgets.carousels.newProducts");
 
-  // Build absolute base URL for server-side fetch
-  const h = await headers();
-  const base = `${h.get("x-forwarded-proto") ?? "http"}://${
-    h.get("x-forwarded-host") ?? h.get("host")
-  }`;
-
-  const res = await fetch(
-    `${base}/api/products?lang=${locale}&isNew=true&limit=${limit}`,
-    { next: { revalidate } }
-  );
-  if (!res.ok) return null;
-
-  const data = await res.json();
-  const items = Array.isArray(data) ? data : data.items ?? [];
+  const { items } = await getProducts({
+    isNew: true,
+    limit,
+    lang: locale as "en" | "pl",
+    page: 1,
+  });
   if (!items?.length) return null;
 
   return (

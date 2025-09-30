@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useWishlist } from "@/features/wishlist/model/useWishlist";
-import { ProductDTO } from "@/entities/product/types";
+import { ProductSummaryDTO } from "@/entities/product/types";
 import ProductGrid from "@/widgets/ProductGrid/ProductGrid";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -12,19 +12,13 @@ import { Container } from "@/shared/ui/layout/Container";
 import { ProductGridSkeleton } from "@/widgets/ProductGrid/ProductGrid.skeleton";
 import { pathnames, withLocale } from "@/shared/lib/pathnames";
 import PageHeader from "@/shared/ui/molecules/PageHeader/PageHeader";
+import { fetchProductsByIds } from "@/shared/lib/api/products";
 
 export default function WishlistPageClient({ locale }: { locale: Locale }) {
   const t = useTranslations();
   const { ids, isReady } = useWishlist();
-  const [items, setItems] = useState<ProductDTO[] | null>(null);
+  const [items, setItems] = useState<ProductSummaryDTO[] | null>(null);
   const [loading, setLoading] = useState(true);
-
-  const query = useMemo(() => {
-    const sp = new URLSearchParams();
-    sp.set("lang", locale);
-    if (ids.length) sp.set("ids", ids.join(","));
-    return sp.toString();
-  }, [ids, locale]);
 
   useEffect(() => {
     if (!isReady) return;
@@ -34,11 +28,10 @@ export default function WishlistPageClient({ locale }: { locale: Locale }) {
       return;
     }
     setLoading(true);
-    fetch(`/api/products?${query}`, { cache: "no-store" })
-      .then((r) => r.json())
-      .then((data) => setItems((Array.isArray(data) ? data : data.items) ?? []))
+    fetchProductsByIds(ids, locale)
+      .then((data) => setItems(data ?? []))
       .finally(() => setLoading(false));
-  }, [ids, isReady, query]);
+  }, [ids, isReady, locale]);
 
   const hasItems = items && items.length > 0;
 

@@ -1,13 +1,13 @@
-import { headers } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import type { Locale } from "@/shared/lib/types";
 import PageHeader from "@/shared/ui/molecules/PageHeader/PageHeader";
 import { MasonryGrid } from "@/shared/ui/molecules/MasonryGrid";
-import ProductsByIdsGrid from "@/widgets/ProductGrid/ProductsByIdsGrid";
 import { Container } from "@/shared/ui/layout/Container";
-import { CampaignDetailDTO } from "@/entities/campaign/types";
-
-export const revalidate = 60; // tweak as you like (0 during heavy dev)
+import {
+  getCampaignById,
+  getCampaignProducts,
+} from "@/shared/lib/api/campaigns";
+import ProductGrid from "@/widgets/ProductGrid/ProductGrid";
 
 export default async function InspirationsPage({
   params,
@@ -17,18 +17,10 @@ export default async function InspirationsPage({
   const { locale } = params;
   const t = await getTranslations({ locale, namespace: "inspirations" });
 
-  // Build absolute base URL for server-side fetches
-  const h = await headers();
-  const base = `${h.get("x-forwarded-proto") ?? "http"}://${
-    h.get("x-forwarded-host") ?? h.get("host")
-  }`;
+  // Fetch a single campaign by id (cmp_001).
+  const campaign = await getCampaignById("cmp_001", locale);
 
-  // Fetch a single campaign by id (cmp_001). Change if you want "first campaign" instead.
-  const res = await fetch(`${base}/api/campaigns/cmp_001?lang=${locale}`, {
-    next: { revalidate },
-  });
-
-  if (res.status === 404) {
+  if (!campaign) {
     return (
       <main className="mx-auto max-w-6xl p-6">
         <PageHeader title={t("title")} description={t("description")} />
@@ -38,19 +30,9 @@ export default async function InspirationsPage({
       </main>
     );
   }
-  if (!res.ok) {
-    return (
-      <main className="mx-auto max-w-6xl p-6">
-        <PageHeader title={t("title")} description={t("description")} />
-        <p className="text-sm text-red-600">
-          {t("error", { default: "Failed to load inspirations." })}
-        </p>
-      </main>
-    );
-  }
 
-  const campaign = (await res.json()) as CampaignDetailDTO;
-  const { title, description, images, products, story } = campaign;
+  const products = await getCampaignProducts(campaign.id, 30, locale);
+  const { title, description, images, story } = campaign;
 
   return (
     <main>
@@ -84,9 +66,10 @@ export default async function InspirationsPage({
       )}
 
       {/* Campaign products (server component fetching by IDs) */}
-      {products?.length > 0 && (
-        <Container>
-          <ProductsByIdsGrid ids={products} title={t("campaignProducts")} />
+      {products.items?.length > 0 && (
+        <Container className="my-10">
+          <h2 className="text-lg font-semibold">{title}</h2>
+          <ProductGrid items={products.items} />
         </Container>
       )}
     </main>

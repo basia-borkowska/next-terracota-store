@@ -1,31 +1,46 @@
-import type { Locale } from "@/shared/lib/types";
-import type {
-  CampaignDetailDTO,
-  CampaignSummaryDTO,
-} from "@/entities/campaign/types";
+import { apiGet } from "../http";
+import { ProductSummaryDTO } from "@/entities/product/types";
 
-export async function fetchCampaigns(lang: Locale, page = 1, limit = 24) {
-  const sp = new URLSearchParams({
-    lang,
+export type CampaignSummaryDTO = {
+  id: string;
+  title: string;
+  description: string;
+  images: string[];
+  createdAt: string;
+};
+export type CampaignDTO = CampaignSummaryDTO & { story: string };
+
+export async function getCampaigns(
+  page = 1,
+  size = 12,
+  lang: "en" | "pl" = "en"
+) {
+  const q = new URLSearchParams({
     page: String(page),
-    limit: String(limit),
+    size: String(size),
+    lang,
   });
-  const res = await fetch(`/api/campaigns?${sp}`, { cache: "no-store" });
-  if (!res.ok) throw new Error("Failed to load campaigns");
-  return (await res.json()) as {
+  return apiGet<{
     items: CampaignSummaryDTO[];
     page: number;
-    limit: number;
+    size: number;
     total: number;
-    hasNext: boolean;
-  };
+  }>(`/campaigns?${q.toString()}`);
 }
 
-export async function fetchCampaignById(id: string, lang: Locale) {
-  const sp = new URLSearchParams({ lang });
-  const res = await fetch(`/api/campaigns/${encodeURIComponent(id)}?${sp}`, {
-    cache: "no-store",
-  });
-  if (!res.ok) return null;
-  return (await res.json()) as CampaignDetailDTO;
+export async function getCampaignById(id: string, lang: "en" | "pl" = "en") {
+  return apiGet<CampaignDTO>(`/campaigns/${id}?lang=${lang}`);
+}
+
+export async function getCampaignProducts(
+  id: string,
+  size = 30,
+  lang: "en" | "pl" = "en"
+) {
+  const q = new URLSearchParams({ size: String(size), lang });
+  return apiGet<{
+    items: ProductSummaryDTO[];
+    size: number;
+    campaignId: string;
+  }>(`/campaigns/${id}/products?${q.toString()}`);
 }

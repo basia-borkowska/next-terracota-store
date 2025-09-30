@@ -1,9 +1,9 @@
 import { Suspense } from "react";
-import { headers } from "next/headers";
 import { ProductCarouselSkeleton } from "../ProductCarousel/ProductCarousel.skeleton";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { getLocale, getTranslations } from "next-intl/server";
-import { ProductSummaryDTO } from "@/entities/product/types";
+import { getSimilarProducts } from "@/shared/lib/api/products";
+import { Locale } from "@/shared/lib/types";
 
 type Props = {
   productId: string;
@@ -29,21 +29,11 @@ async function SimilarProductsInner({
   const locale = await getLocale();
   const t = await getTranslations({ locale });
   const translatedTitle = title ?? t("widgets.carousels.similarProducts");
-
-  const h = await headers();
-  const base = `${h.get("x-forwarded-proto") ?? "http"}://${
-    h.get("x-forwarded-host") ?? h.get("host")
-  }`;
-
-  const res = await fetch(
-    `${base}/api/products/${encodeURIComponent(
-      productId
-    )}/similar?lang=${locale}&limit=${limit}`,
-    { cache: "no-store" }
+  const { items } = await getSimilarProducts(
+    productId,
+    limit,
+    locale as Locale
   );
-  if (!res.ok) return null;
-
-  const items = (await res.json()) as ProductSummaryDTO[];
   if (!items?.length) return null;
 
   return (

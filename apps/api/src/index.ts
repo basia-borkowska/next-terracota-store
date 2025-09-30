@@ -7,6 +7,7 @@ import pinoHttp from "pino-http";
 import { env } from "./env.js";
 import { health } from "./routes/health.js";
 import { products } from "./routes/products.js";
+import { campaigns } from "./routes/campaigns.js";
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use(
 // routes
 app.use("/api", health);
 app.use("/api", products);
+app.use("/api", campaigns);
 
 // error handler
 app.use(
