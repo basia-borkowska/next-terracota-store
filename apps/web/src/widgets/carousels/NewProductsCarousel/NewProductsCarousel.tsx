@@ -3,6 +3,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { ProductCarouselSkeleton } from "../ProductCarousel/ProductCarousel.skeleton";
 import { getProducts } from "@/shared/lib/api/products";
+import { Locale } from "@/shared/lib/types";
 
 type Props = {
   title?: string;
@@ -26,7 +27,7 @@ async function NewProductsInner({ title, size = 12, className }: Props) {
   const { items } = await getProducts({
     isNew: true,
     size,
-    lang: locale as "en" | "pl",
+    lang: locale as Locale,
     page: 1,
   });
   if (!items?.length) return null;

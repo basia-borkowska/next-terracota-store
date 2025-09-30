@@ -1,5 +1,6 @@
 import { apiGet } from "../http";
 import { ProductSummaryDTO } from "@/entities/product/types";
+import { ListResponse, Locale } from "../types";
 
 export type CampaignSummaryDTO = {
   id: string;
@@ -10,32 +11,23 @@ export type CampaignSummaryDTO = {
 };
 export type CampaignDTO = CampaignSummaryDTO & { story: string };
 
-export async function getCampaigns(
-  page = 1,
-  size = 12,
-  lang: "en" | "pl" = "en"
-) {
+export async function getCampaigns(page = 1, size = 12, lang: Locale = "en") {
   const q = new URLSearchParams({
     page: String(page),
     size: String(size),
     lang,
   });
-  return apiGet<{
-    items: CampaignSummaryDTO[];
-    page: number;
-    size: number;
-    total: number;
-  }>(`/campaigns?${q.toString()}`);
+  return apiGet<ListResponse<CampaignSummaryDTO>>(`/campaigns?${q.toString()}`);
 }
 
-export async function getCampaignById(id: string, lang: "en" | "pl" = "en") {
+export async function getCampaignById(id: string, lang: Locale = "en") {
   return apiGet<CampaignDTO>(`/campaigns/${id}?lang=${lang}`);
 }
 
 export async function getCampaignProducts(
   id: string,
   size = 30,
-  lang: "en" | "pl" = "en"
+  lang: Locale = "en"
 ) {
   const q = new URLSearchParams({ size: String(size), lang });
   return apiGet<{
