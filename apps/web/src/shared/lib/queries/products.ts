@@ -1,5 +1,5 @@
-import type { ProductsListResponse } from "@/shared/lib/api/products";
-import { Locale } from "@/shared/lib/types";
+import { ProductSummaryDTO } from "@/entities/product/types";
+import { ListResponse, Locale } from "@/shared/lib/types";
 
 export type ProductsQueryParams = {
   lang: Locale;
@@ -21,5 +21,5 @@ export const productsKey = (p: ProductsQueryParams) =>
     },
   ] as const;
 
-export const getNextPageParam = (last: ProductsListResponse) =>
+export const getNextPageParam = (last: ListResponse<ProductSummaryDTO>) =>
   last.page * last.size < last.total ? last.page + 1 : undefined;
