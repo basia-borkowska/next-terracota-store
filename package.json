@@ -6,11 +6,16 @@
     "apps/api"
   ],
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express-session": "^1.18.2",
     "concurrently": "^9.0.0"
   },
   "scripts": {
     "dev": "concurrently -n web,api -c cyan,magenta \"npm --workspace apps/web run dev\" \"npm --workspace apps/api run dev\"",
     "build": "npm --workspace apps/web run build && npm --workspace apps/api run build",
     "start": "concurrently -n web,api -c cyan,magenta \"npm --workspace apps/web run start\" \"npm --workspace apps/api run start\""
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7"
   }
 }
