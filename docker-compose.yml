@@ -1,4 +1,20 @@
 services:
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    env_file:
+      - ./apps/api/.env
+    ports:
+      - "4000:4000"
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    env_file:
+      - ./apps/web/.env.local
+    ports:
+      - "3000:3000"
   db:
     image: postgres:16
     container_name: terracota_db
