@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import type { Locale } from "@/shared/lib/types";
+import type { Locale } from "@terracota/types";
 import PageHeader from "@/shared/ui/molecules/PageHeader/PageHeader";
 import { MasonryGrid } from "@/shared/ui/molecules/MasonryGrid";
 import { Container } from "@/shared/ui/layout/Container";

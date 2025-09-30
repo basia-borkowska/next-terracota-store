@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef } from "react";
 import { useProductsInfinite } from "@/shared/lib/queries/useProductsInfinite";
 import ProductGrid from "@/widgets/ProductGrid/ProductGrid";
-import { Locale } from "@/shared/lib/types";
+import type { Locale } from "@terracota/types";
 import { ProductGridSkeleton } from "@/widgets/ProductGrid/ProductGrid.skeleton";
 
 type Props = {

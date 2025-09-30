@@ -3,7 +3,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { ProductCarouselSkeleton } from "../ProductCarousel/ProductCarousel.skeleton";
 import { getProducts } from "@/shared/lib/api/products";
-import { Locale } from "@/shared/lib/types";
+import type { Locale } from "@terracota/types";
 
 type Props = {
   title?: string;

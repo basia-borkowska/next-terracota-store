@@ -1,4 +1,4 @@
-import { Locale } from "./types";
+import type { Locale } from "@terracota/types";
 class ApiError extends Error {
   status: number;
   body: unknown;

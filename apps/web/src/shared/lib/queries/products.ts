@@ -1,5 +1,5 @@
-import { ProductSummaryDTO } from "@/entities/product/types";
-import { ListResponse, Locale } from "@/shared/lib/types";
+import type { ProductSummaryDTO, Paginated } from "@terracota/types";
+import type { Locale } from "@terracota/types";
 
 export type ProductsQueryParams = {
   lang: Locale;
@@ -21,5 +21,5 @@ export const productsKey = (p: ProductsQueryParams) =>
     },
   ] as const;
 
-export const getNextPageParam = (last: ListResponse<ProductSummaryDTO>) =>
+export const getNextPageParam = (last: Paginated<ProductSummaryDTO>) =>
   last.page * last.size < last.total ? last.page + 1 : undefined;

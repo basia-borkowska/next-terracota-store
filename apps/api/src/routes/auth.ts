@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { prisma } from "../lib/prisma.js";
-import { email, z } from "zod";
+import { z } from "zod";
 import argon2 from "argon2";
 
 export const auth = Router();

@@ -3,7 +3,7 @@ import { ProductCarouselSkeleton } from "../ProductCarousel/ProductCarousel.skel
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getSimilarProducts } from "@/shared/lib/api/products";
-import { Locale } from "@/shared/lib/types";
+import type { Locale } from "@terracota/types";
 
 type Props = {
   productId: string;

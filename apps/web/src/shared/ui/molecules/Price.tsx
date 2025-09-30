@@ -1,7 +1,7 @@
 type Props = {
   price: number;
   currency: string;
-  discountedPrice: number | null;
+  discountedPrice?: number | null;
 };
 
 const Price = ({ price, currency, discountedPrice }: Props) => {
@@ -10,7 +10,10 @@ const Price = ({ price, currency, discountedPrice }: Props) => {
     currency,
     minimumFractionDigits: 2,
   });
-  const hasDiscount = discountedPrice !== null && discountedPrice < price;
+  const hasDiscount =
+    discountedPrice !== null &&
+    discountedPrice !== undefined &&
+    discountedPrice < price;
 
   return (
     <div className="flex gap-2">

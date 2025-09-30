@@ -1,7 +1,7 @@
 "use client";
 
 import ProductCard from "@/widgets/ProductCard/ProductCard";
-import { ProductSummaryDTO } from "@/entities/product/types";
+import type { ProductSummaryDTO } from "@terracota/types";
 import { useTranslations } from "next-intl";
 
 type Props = { items: ProductSummaryDTO[]; showNewBadge?: boolean };

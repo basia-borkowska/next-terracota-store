@@ -1,5 +1,9 @@
-import { ProductDTO, ProductSummaryDTO } from "@/entities/product/types";
-import { ListResponse, Locale } from "../types";
+import type {
+  ProductSummaryDTO,
+  ProductDTO,
+  Paginated,
+  Locale,
+} from "@terracota/types";
 import { apiGet } from "../http";
 
 export async function getProducts(params: {
@@ -20,7 +24,7 @@ export async function getProducts(params: {
   if (isNew) q.set("isNew", "true");
   if (onSale) q.set("onSale", "true");
 
-  return await apiGet<ListResponse<ProductSummaryDTO>>(
+  return await apiGet<Paginated<ProductSummaryDTO>>(
     `/products?${q.toString()}`
   );
 }

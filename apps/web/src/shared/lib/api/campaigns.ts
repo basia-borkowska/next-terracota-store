@@ -1,15 +1,11 @@
 import { apiGet } from "../http";
-import { ProductSummaryDTO } from "@/entities/product/types";
-import { ListResponse, Locale } from "../types";
-
-export type CampaignSummaryDTO = {
-  id: string;
-  title: string;
-  description: string;
-  images: string[];
-  createdAt: string;
-};
-export type CampaignDTO = CampaignSummaryDTO & { story: string };
+import type {
+  CampaignDTO,
+  CampaignSummaryDTO,
+  ProductSummaryDTO,
+  Paginated,
+  Locale,
+} from "@terracota/types";
 
 export async function getCampaigns(page = 1, size = 12, lang: Locale = "en") {
   const q = new URLSearchParams({
@@ -17,7 +13,7 @@ export async function getCampaigns(page = 1, size = 12, lang: Locale = "en") {
     size: String(size),
     lang,
   });
-  return apiGet<ListResponse<CampaignSummaryDTO>>(`/campaigns?${q.toString()}`);
+  return apiGet<Paginated<CampaignSummaryDTO>>(`/campaigns?${q.toString()}`);
 }
 
 export async function getCampaignById(id: string, lang: Locale = "en") {

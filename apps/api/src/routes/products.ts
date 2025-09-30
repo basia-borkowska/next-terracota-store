@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { prisma } from "../lib/prisma.js";
 import { toProductDTO, toProductSummaryDTO } from "../lib/mappers.js";
+import { Locale } from "@terracota/types";
 
 export const products = Router();
 
@@ -10,7 +11,7 @@ products.get("/products", async (req, res, next) => {
     const size = Math.max(1, Math.min(60, Number(req.query.size ?? 12)));
     const skip = (page - 1) * size;
 
-    const lang = (req.query.lang as "en" | "pl") ?? "en";
+    const lang = (req.query.lang as Locale) ?? "en";
     const category = (req.query.category as string | undefined)?.trim();
     const isNew = req.query.isNew === "true";
     const onSale = req.query.onSale === "true";
@@ -58,7 +59,7 @@ products.get("/products", async (req, res, next) => {
 
 products.get("/products/:id", async (req, res, next) => {
   try {
-    const lang = (req.query.lang as "en" | "pl") ?? "en";
+    const lang = (req.query.lang as Locale) ?? "en";
     const product = await prisma.product.findUnique({
       where: { id: req.params.id },
     });
@@ -71,7 +72,7 @@ products.get("/products/:id", async (req, res, next) => {
 
 products.get("/products/:id/similar", async (req, res, next) => {
   try {
-    const lang = (req.query.lang as "en" | "pl") ?? "en";
+    const lang = (req.query.lang as Locale) ?? "en";
     const size = Math.max(1, Math.min(24, Number(req.query.size ?? 12)));
 
     const base = await prisma.product.findUnique({
