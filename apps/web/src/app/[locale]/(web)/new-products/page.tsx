@@ -1,7 +1,4 @@
-import {
-  getNextPageParam,
-  productsKey,
-} from "@/shared/lib/queries/products";
+import { getNextPageParam, productsKey } from "@/shared/lib/queries/products";
 import { getProducts } from "@/shared/lib/api/products";
 import { LocaleParams } from "@/shared/lib/types";
 import { Container } from "@/shared/ui/layout/Container";
@@ -23,7 +20,7 @@ export default async function NewProductsPage({
   const { locale } = await params;
   const t = await getTranslations({ locale });
 
-  const baseParams = { lang: locale, limit: 24 };
+  const baseParams = { lang: locale, size: 24 };
 
   await queryClient.prefetchInfiniteQuery({
     queryKey: productsKey(baseParams),

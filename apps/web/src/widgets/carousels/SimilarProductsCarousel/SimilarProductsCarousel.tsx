@@ -8,7 +8,7 @@ import { Locale } from "@/shared/lib/types";
 type Props = {
   productId: string;
   title?: string;
-  limit?: number;
+  size?: number;
   className?: string;
 };
 
@@ -23,17 +23,13 @@ export default function SimilarProductsCarousel(props: Props) {
 async function SimilarProductsInner({
   productId,
   title,
-  limit = 12,
+  size = 12,
   className,
 }: Props) {
   const locale = await getLocale();
   const t = await getTranslations({ locale });
   const translatedTitle = title ?? t("widgets.carousels.similarProducts");
-  const { items } = await getSimilarProducts(
-    productId,
-    limit,
-    locale as Locale
-  );
+  const { items } = await getSimilarProducts(productId, size, locale as Locale);
   if (!items?.length) return null;
 
   return (

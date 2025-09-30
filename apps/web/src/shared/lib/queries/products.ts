@@ -3,7 +3,7 @@ import { Locale } from "@/shared/lib/types";
 
 export type ProductsQueryParams = {
   lang: Locale;
-  limit?: number;
+  size?: number;
   category?: string;
   isNew?: boolean;
   onSale?: boolean;
@@ -14,7 +14,7 @@ export const productsKey = (p: ProductsQueryParams) =>
     "products",
     p.lang,
     {
-      limit: p.limit ?? 24,
+      size: p.size ?? 24,
       category: p.category,
       isNew: p.isNew,
       onSale: p.onSale,
@@ -22,4 +22,4 @@ export const productsKey = (p: ProductsQueryParams) =>
   ] as const;
 
 export const getNextPageParam = (last: ProductsListResponse) =>
-  last.hasNext ? last.page + 1 : undefined;
+  last.page * last.size < last.total ? last.page + 1 : undefined;

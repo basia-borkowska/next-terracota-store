@@ -8,7 +8,7 @@ import { ProductGridSkeleton } from "@/widgets/ProductGrid/ProductGrid.skeleton"
 
 type Props = {
   lang: Locale;
-  limit?: number;
+  size?: number;
   category?: string;
   isNew?: boolean;
   onSale?: boolean;
@@ -16,7 +16,7 @@ type Props = {
 
 export default function ProductsInfinite({
   lang,
-  limit = 24,
+  size = 24,
   category,
   isNew,
   onSale,
@@ -28,7 +28,7 @@ export default function ProductsInfinite({
     isFetchingNextPage,
     status,
     error,
-  } = useProductsInfinite({ lang, limit, category, isNew, onSale });
+  } = useProductsInfinite({ lang, size, category, isNew, onSale });
 
   const items = useMemo(
     () => data?.pages.flatMap((p) => p.items) ?? [],

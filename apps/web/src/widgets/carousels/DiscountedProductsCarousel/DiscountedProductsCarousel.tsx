@@ -6,7 +6,7 @@ import { getProducts } from "@/shared/lib/api/products";
 
 type Props = {
   title?: string;
-  limit?: number;
+  size?: number;
   className?: string;
 };
 
@@ -18,18 +18,14 @@ export default function DiscountedProductsCarousel(props: Props) {
   );
 }
 
-async function DiscountedProductsInner({
-  title,
-  limit = 12,
-  className,
-}: Props) {
+async function DiscountedProductsInner({ title, size = 12, className }: Props) {
   const locale = await getLocale();
   const t = await getTranslations({ locale });
   const translatedTitle = title ?? t("widgets.carousels.discountedProducts");
 
   const { items } = await getProducts({
     onSale: true,
-    limit,
+    size,
     lang: locale as "en" | "pl",
     page: 1,
   });

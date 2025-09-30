@@ -16,7 +16,7 @@ export default async function ProductsPage({
 }) {
   const queryClient = new QueryClient();
   const { locale } = await params;
-  const baseParams = { lang: locale, limit: 24 };
+  const baseParams = { lang: locale, size: 24 };
 
   await queryClient.prefetchInfiniteQuery({
     queryKey: productsKey(baseParams),
@@ -31,7 +31,7 @@ export default async function ProductsPage({
   return (
     <Container>
       <HydrationBoundary state={dehydrate(queryClient)}>
-        <ProductsInfinite lang={locale} limit={24} />
+        <ProductsInfinite lang={locale} size={24} />
       </HydrationBoundary>
     </Container>
   );
