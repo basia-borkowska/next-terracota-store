@@ -9,6 +9,8 @@ class ApiError extends Error {
   }
 }
 
+export { ApiError };
+
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api";
 
 async function handle<T>(res: Response, path: string): Promise<T> {

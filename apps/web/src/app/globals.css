@@ -4,8 +4,11 @@
 
 @theme inline {
   --color-dark: var(--dark);
+  --color-dark-secondary: var(--dark-secondary);
   --color-light: var(--light);
+  --color-light-muted: var(--light-muted);
   --color-brand: var(--brand);
+  --color-accent-highlight: var(--accent-highlight);
   --color-interactive: var(--brand);
   --color-interactive-hover: var(--dark);
 
@@ -52,8 +55,11 @@
 
 :root {
   --dark: rgb(37, 24, 20);
+  --dark-secondary: #202020; /* card/panel surface */
   --light: rgb(239, 246, 255);
+  --light-muted: #808080; /* secondary text */
   --brand: rgb(131, 85, 70);
+  --accent-highlight: #ff2b2b; /* warm highlight (alerts, success) */
   --navbar-height: 56px;
 
   --radius: 0.625rem;

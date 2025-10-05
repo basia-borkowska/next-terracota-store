@@ -15,7 +15,7 @@ export default async function InspirationsPage({
   params: { locale: Locale };
 }) {
   const { locale } = params;
-  const t = await getTranslations({ locale, namespace: "inspirations" });
+  const t = await getTranslations();
 
   // Fetch a single campaign by id (cmp_001).
   const campaign = await getCampaignById("cmp_001", locale);
@@ -23,10 +23,7 @@ export default async function InspirationsPage({
   if (!campaign) {
     return (
       <main className="mx-auto max-w-6xl p-6">
-        <PageHeader title={t("title")} description={t("description")} />
-        <p className="text-sm text-gray-600">
-          {t("empty", { default: "No campaigns yet." })}
-        </p>
+        <p className="text-sm text-gray-600">{t("inspirations.empty")}</p>
       </main>
     );
   }
@@ -56,7 +53,6 @@ export default async function InspirationsPage({
         </MasonryGrid>
       </div>
 
-      {/* Long story text block */}
       {story && (
         <section className="bg-brand py-20">
           <p className="mx-auto max-w-[1000px] text-center leading-8 text-light">
@@ -65,7 +61,6 @@ export default async function InspirationsPage({
         </section>
       )}
 
-      {/* Campaign products (server component fetching by IDs) */}
       {products.items?.length > 0 && (
         <Container className="my-10">
           <h2 className="text-lg font-semibold">{title}</h2>

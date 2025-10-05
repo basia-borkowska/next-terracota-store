@@ -43,6 +43,17 @@
     "newIn": "Nowości",
     "inspirations": "Inspiracje"
   },
+  "auth": {
+    "signIn": "Zaloguj się",
+    "signInMessage": "Witamy ponownie! Zaloguj się na swoje konto.",
+    "noAccount": "Nie masz konta?",
+    "register": "Zarejestruj się",
+    "registerMessage": "Utwórz konto, aby zacząć.",
+    "haveAccount": "Masz już konto?",
+    "email": "Email",
+    "password": "Hasło",
+    "name": "Imie i nazwisko"
+  },
   "home": {
     "title": "Na każdą porę roku",
     "subtitle": "Hołd dla klasyki, która pozostaje na zawsze."
@@ -52,7 +63,8 @@
     "description": "Nowości, które inspirują. Odkryj ponadczasowe projekty stworzone z wysokiej jakości materiałów i dopracowane w każdym detalu. Elementy, które odmienią Twój dom i sprawią, że każda chwila stanie się wyjątkowa."
   },
   "inspirations": {
-    "campaignProducts": "Produkty z tej kampanii"
+    "campaignProducts": "Produkty z tej kampanii",
+    "empty": "Brak kampanii."
   },
   "wishList": {
     "header": "Lista życzeń",

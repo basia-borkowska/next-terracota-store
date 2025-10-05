@@ -1,6 +1,9 @@
 // src/shared/lib/pathnames.ts
 
 export const pathnames = {
+  login: "/login",
+  register: "/register",
+  logout: "/logout",
   home: "/",
   products: "/products",
   product: (id: string) => `/products/${id}`,
