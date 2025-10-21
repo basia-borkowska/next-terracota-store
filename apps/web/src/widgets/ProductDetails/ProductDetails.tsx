@@ -1,7 +1,7 @@
 "use client";
 
 import Price from "@/shared/ui/molecules/Price";
-import { ProductDTO } from "@/entities/product/types";
+import type { ProductDTO } from "@terracota/types";
 import { Button } from "@/shared/ui/atoms/Button";
 import NewInBadge from "@/shared/ui/atoms/NewInBadge";
 import DiscountBadge from "@/shared/ui/atoms/DiscountBadge";

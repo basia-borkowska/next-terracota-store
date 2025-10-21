@@ -3,14 +3,14 @@
   "private": true,
   "workspaces": [
     "apps/web",
-    "apps/api"
+    "apps/api",
+    "packages/*"
   ],
   "devDependencies": {
     "concurrently": "^9.0.0"
   },
   "scripts": {
-    "dev": "concurrently -n web,api -c cyan,magenta \"npm --workspace apps/web run dev\" \"npm --workspace apps/api run dev\"",
-    "build": "npm --workspace apps/web run build && npm --workspace apps/api run build",
-    "start": "concurrently -n web,api -c cyan,magenta \"npm --workspace apps/web run start\" \"npm --workspace apps/api run start\""
+    "build": "npm --workspace packages/types run build && npm --workspace apps/api run build && npm --workspace apps/web run build",
+    "dev": "concurrently -n web,api -c cyan,magenta \"npm --workspace apps/web run dev\" \"npm --workspace apps/api run dev\""
   }
 }

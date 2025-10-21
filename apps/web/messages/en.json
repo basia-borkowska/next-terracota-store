@@ -26,6 +26,17 @@
     "newIn": "New In",
     "inspirations": "Inspirations"
   },
+  "auth": {
+    "signIn": "Sign In",
+    "signInMessage": "Welcome back! Please sign in to your account.",
+    "noAccount": "Don't have an account?",
+    "register": "Sign up",
+    "registerMessage": "Create an account to get started.",
+    "haveAccount": "Already have an account?",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name"
+  },
   "home": {
     "title": "For Every Season",
     "subtitle": "A tribute to the classics that are here to stay."
@@ -35,7 +46,8 @@
     "description": "Discover timeless designs crafted from high-quality materials and refined in every detail. Pieces that will transform your home and make every moment special."
   },
   "inspirations": {
-    "campaignProducts": "Products from this campaign"
+    "campaignProducts": "Products from this campaign",
+    "empty": "No campaigns yet."
   },
   "wishList": {
     "header": "Wish List",

@@ -1,22 +1,5 @@
 import { Product, Prisma, Campaign } from "@prisma/client";
-
-/* ---------- Product DTOs ---------- */
-export type ProductSummaryDTO = {
-  id: string;
-  title: string;
-  price: number;
-  discountedPrice?: number | null;
-  currency: string;
-  isNew: boolean;
-  onSale: boolean;
-  createdAt: string;
-  category: string;
-  images: string[];
-};
-
-export type ProductDTO = ProductSummaryDTO & {
-  description: string;
-};
+import type { ProductSummaryDTO, ProductDTO, Locale } from "@terracota/types";
 
 function toNumber(value: Prisma.Decimal | number | null | undefined) {
   return value == null
@@ -28,7 +11,7 @@ function toNumber(value: Prisma.Decimal | number | null | undefined) {
 
 export function toProductSummaryDTO(
   p: Product,
-  lang: "en" | "pl"
+  lang: Locale
 ): ProductSummaryDTO {
   const discounted = toNumber(p.discountedPrice) ?? null;
   return {
@@ -45,7 +28,7 @@ export function toProductSummaryDTO(
   };
 }
 
-export function toProductDTO(p: Product, lang: "en" | "pl"): ProductDTO {
+export function toProductDTO(p: Product, lang: Locale): ProductDTO {
   return {
     ...toProductSummaryDTO(p, lang),
     images: p.images,
@@ -68,7 +51,7 @@ export type CampaignDTO = CampaignSummaryDTO & {
 
 export function toCampaignSummaryDTO(
   c: Campaign,
-  lang: "en" | "pl"
+  lang: Locale
 ): CampaignSummaryDTO {
   return {
     id: c.id,
@@ -79,7 +62,7 @@ export function toCampaignSummaryDTO(
   };
 }
 
-export function toCampaignDTO(c: Campaign, lang: "en" | "pl"): CampaignDTO {
+export function toCampaignDTO(c: Campaign, lang: Locale): CampaignDTO {
   return {
     ...toCampaignSummaryDTO(c, lang),
     story: lang === "pl" ? c.story_pl : c.story_en,

@@ -5,15 +5,22 @@ import Image from "next/image";
 import { useMemo } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { ShoppingCart, Heart, Columns3 as Columns } from "lucide-react";
+import {
+  ShoppingCart,
+  Heart,
+  Columns3 as Columns,
+  LogOut,
+  User,
+} from "lucide-react";
 import NavbarLink from "./NavbarLink";
 import NavbarLanguageSwitch from "./NavbarLanguageSwitch";
 import { useScrollY } from "@/shared/hooks/useScrollY";
 import { pathnames, withLocale } from "@/shared/lib/pathnames";
+import { Me } from "@terracota/types";
 
 const Y_SCROLL_THRESHOLD = 24;
 
-const Navbar = () => {
+const Navbar = ({ user }: { user: Me | null }) => {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
@@ -67,6 +74,15 @@ const Navbar = () => {
         </NavbarLink>
 
         <NavbarLanguageSwitch />
+        {user ? (
+          <NavbarLink href={withLocale(locale, pathnames.logout)}>
+            <LogOut className="size-5" />
+          </NavbarLink>
+        ) : (
+          <NavbarLink href={withLocale(locale, pathnames.login)}>
+            <User className="size-5" />
+          </NavbarLink>
+        )}
       </div>
     </nav>
   );

@@ -1,5 +1,5 @@
 import { getProductById } from "@/shared/lib/api/products";
-import { Locale } from "@/shared/lib/types";
+import type { Locale } from "@terracota/types";
 import { Container } from "@/shared/ui/layout/Container";
 import NewProductsCarousel from "@/widgets/carousels/NewProductsCarousel/NewProductsCarousel";
 import SimilarProductsCarousel from "@/widgets/carousels/SimilarProductsCarousel/SimilarProductsCarousel";

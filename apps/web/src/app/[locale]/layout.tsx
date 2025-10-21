@@ -2,7 +2,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
 import i18n from "@/../i18n";
-import Navbar from "@/widgets/navbar/Navbar";
 import { LocaleParams } from "@/shared/lib/types";
 
 export function generateStaticParams() {
@@ -24,7 +23,6 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <Navbar />
       {children}
     </NextIntlClientProvider>
   );

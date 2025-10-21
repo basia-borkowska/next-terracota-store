@@ -5,6 +5,7 @@ import {
   toCampaignSummaryDTO,
   toProductSummaryDTO,
 } from "../lib/mappers.js";
+import { Locale } from "@terracota/types";
 
 export const campaigns = Router();
 
@@ -13,7 +14,7 @@ campaigns.get("/campaigns", async (req, res, next) => {
     const page = Math.max(1, Number(req.query.page ?? 1));
     const size = Math.max(1, Math.min(60, Number(req.query.size ?? 12)));
     const skip = (page - 1) * size;
-    const lang = (req.query.lang as "en" | "pl") ?? "en";
+    const lang = (req.query.lang as Locale) ?? "en";
 
     const [rows, total] = await Promise.all([
       prisma.campaign.findMany({
@@ -37,7 +38,7 @@ campaigns.get("/campaigns", async (req, res, next) => {
 
 campaigns.get("/campaigns/:id", async (req, res, next) => {
   try {
-    const lang = (req.query.lang as "en" | "pl") ?? "en";
+    const lang = (req.query.lang as Locale) ?? "en";
     const c = await prisma.campaign.findUnique({
       where: { id: req.params.id },
     });
@@ -50,7 +51,7 @@ campaigns.get("/campaigns/:id", async (req, res, next) => {
 
 campaigns.get("/campaigns/:id/products", async (req, res, next) => {
   try {
-    const lang = (req.query.lang as "en" | "pl") ?? "en";
+    const lang = (req.query.lang as Locale) ?? "en";
     const size = Math.max(1, Math.min(60, Number(req.query.size ?? 30)));
 
     const cps = await prisma.campaignProduct.findMany({

@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { useWishlist } from "@/features/wishlist/model/useWishlist";
-import { ProductSummaryDTO } from "@/entities/product/types";
+import type { ProductSummaryDTO } from "@terracota/types";
 import ProductGrid from "@/widgets/ProductGrid/ProductGrid";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "@/shared/ui/atoms/Button";
-import { Locale } from "@/shared/lib/types";
+import type { Locale } from "@terracota/types";
 import { Container } from "@/shared/ui/layout/Container";
 import { ProductGridSkeleton } from "@/widgets/ProductGrid/ProductGrid.skeleton";
 import { pathnames, withLocale } from "@/shared/lib/pathnames";
